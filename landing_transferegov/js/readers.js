@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Modals selectors
   const btnOpenSlides = document.getElementById('btn-read-slides');
+  const btnOpenSlidesIntro = document.getElementById('btn-read-slides-intro');
   const btnOpenReport = document.getElementById('btn-read-report');
   
   const slidesModal = document.getElementById('slides-reader-modal');
@@ -58,14 +59,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Modal Show / Hide logic
-  if (btnOpenSlides && btnCloseSlides && slidesModal) {
-    btnOpenSlides.addEventListener('click', (e) => {
+  if (btnCloseSlides && slidesModal) {
+    const openSlides = (e) => {
       e.preventDefault();
       slidesModal.style.display = 'flex';
       currentSlide = 1;
       updateSlideViewer();
       document.body.style.overflow = 'hidden'; // block page scroll
-    });
+    };
+
+    if (btnOpenSlides) {
+      btnOpenSlides.addEventListener('click', openSlides);
+    }
+    if (btnOpenSlidesIntro) {
+      btnOpenSlidesIntro.addEventListener('click', openSlides);
+    }
 
     btnCloseSlides.addEventListener('click', () => {
       slidesModal.style.display = 'none';
