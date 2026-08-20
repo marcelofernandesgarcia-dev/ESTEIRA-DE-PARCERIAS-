@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 `[API Simpatinhas (Aferição)] ──> [Metas Padronizadas]
          │ (Foco: Monitoramento Físico)
          ▼
-[SIAFI / UG: CIORG 267384] ──> [Relatório Simplificado]`;
+[SIAFI / UG: SIORG 267384] ──> [Relatório Simplificado]`;
 
     } else if (prog === 'prevfogo') {
       const isAmazonia = (region === 'N' || region === 'CO');
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 `[Plano de Contingência] (N/CO) ──> [Filtro Amazônia Legal]
          │
          ▼
-[Cláusula Suspensiva (1a)] ──> [SIAFI / UG: CIORG 267384]`;
+[Cláusula Suspensiva (1a)] ──> [SIAFI / UG: SIORG 267384]`;
       } else {
         resMetas.textContent = 'Prevenção de incêndios e capacitação de voluntários locais.';
         resDocs.textContent = 'Plano Regional de Prevenção e Combate a Incêndios.';
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 `[Plano Regional Prevenção] ──> [Cláusula Suspensiva (1a)]
          │
          ▼
-[Homologação [ÓRGÃO]] ──> [SIAFI / UG: CIORG 267384]`;
+[Homologação [ÓRGÃO]] ──> [SIAFI / UG: SIORG 267384]`;
       }
     }
   }

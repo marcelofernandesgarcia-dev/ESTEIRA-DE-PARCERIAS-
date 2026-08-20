@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     6: 'Jornada Simplificada em 5 Etapas: Convocatória, Proposição, Validação, Empenho Automático (SIAFI) e Ciclo Final.',
     7: 'Parametrização do Propatinhas: Metas quantitativas e monitoramento físico integrado ao Simpatinhas.',
     8: 'Parametrização do Prévfogo: Planos regionais, regras de defeso ambiental e cláusulas de controle.',
-    9: 'Estruturação Orgânica: Adoção do código do SIORG/CIORG 267384 (Depto de Gestão de Fundos) para gestão das contas.',
+    9: 'Estruturação Orgânica: Adoção do código do SIORG 267384 (Depto de Gestão de Fundos) para gestão das contas.',
     10: 'Gestão de Riscos: Mitigação de curva de aprendizado, "Sintoma do Convênio" e regras de período eleitoral.',
     11: 'Horizonte Temporal: Metas de curto, médio e longo prazo (Visão 2027) para a consolidação da esteira.',
     12: 'Biblioteca de Mídias e Contatos de Suporte: Links úteis e próximos passos na capacitação.'

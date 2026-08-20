@@ -1,15 +1,18 @@
 === duvidas_faq.txt ===
-1. A transferência simplificada exige a assinatura de convênio?
-Destaque: Não é convênio tradicional. O modelo baseia-se em manifestação de interesse/adesão e portaria específica, acelerando o recebimento do recurso.
+1. Como funciona o processo de adesão à Esteira de Parcerias no TRANSFEREGOV?
+O ente local localiza a chamada pública ou edital no TRANSFEREGOV e realiza a manifestação de interesse digital direta, preenchendo as informações solicitadas e assinando o termo de adesão na própria plataforma, sem a burocracia dos convênios tradicionais.
 
-2. Como é aberta a conta bancária da parceria simplificada?
-O processo de abertura bancária é totalmente automatizado pelo próprio TRANSFEREGOV logo após a validação técnica da proposta.
+2. O que é a parametrização das políticas públicas no sistema?
+É a capacidade dada ao órgão concedente federal de pré-configurar no TRANSFEREGOV as regras de negócio, metas padronizadas e documentos obrigatórios para cada política setorial, agilizando as propostas.
 
-3. Como comprovar o uso correto dos recursos recebidos?
-Através do preenchimento do Relatório de Execução Simplificado focado estritamente no cumprimento do objeto físico pactuado.
+3. Como o ambiente de Treinamento (Sandbox) ajuda na capacitação?
+O ambiente de Treinamento funciona como um simulador isolado onde equipes técnicas de estados e municípios podem testar todo o processo operacional (adesão, empenho e execução) de forma prática, sem gerar obrigações financeiras reais.
 
-4. Podemos utilizar a nova plataforma para gerir emendas parlamentares?
-Sim, o TRANSFEREGOV está plenamente preparado para a recepção e a parametrização de emendas parlamentares do [ÓRGÃO].
+4. Quais são os principais benefícios de uso das Transferências Simplificadas?
+Destacam-se o empenho automático via SIAFI, a eliminação de análises ex-ante exaustivas de convênios, a prestação de contas simplificada focada estritamente no alcance do objeto físico, e a total rastreabilidade financeira dos recursos federais.
 
-5. Qual o risco de utilizar o modelo de transferência simplificado?
-O maior risco é a ausência ou inconsistência de dados; portanto, a alimentação tempestiva do TRANSFEREGOV pelas equipes é indispensável.
+5. A prestação de contas é facilitada neste novo modelo?
+Sim, é realizada através do Relatório de Execução Simplificado preenchido diretamente na plataforma TRANSFEREGOV, comprovando apenas a entrega física da meta pactuada.
+
+6. Como ocorre a abertura da conta bancária para recebimento?
+O próprio TRANSFEREGOV comanda a abertura da conta vinculada junto ao banco oficial de forma automática logo após a aprovação da proposta e geração do empenho orçamentário.
