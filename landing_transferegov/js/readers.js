@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     8: 'Parametrização do Prévfogo: Planos regionais, regras de defeso ambiental e cláusulas de controle.',
     9: 'Estruturação Orgânica: Adoção do código do SIORG 267384 (Depto de Gestão de Fundos) para gestão das contas.',
     10: 'Gestão de Riscos: Mitigação de curva de aprendizado, "Sintoma do Convênio" e regras de período eleitoral.',
-    11: 'Horizonte Temporal: Metas de curto, médio e longo prazo (Visão 2027) para a consolidação da esteira.',
+    11: 'Horizonte Temporal: Metas de curto, médio e longo prazo (Visão 2027) para a consolidação do Módulo de Gestão de Parcerias.',
     12: 'Biblioteca de Mídias e Contatos de Suporte: Links úteis e próximos passos na capacitação.'
   };
 

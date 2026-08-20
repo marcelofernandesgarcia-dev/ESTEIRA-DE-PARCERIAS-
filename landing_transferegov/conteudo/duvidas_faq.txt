@@ -1,5 +1,5 @@
 === duvidas_faq.txt ===
-1. Como funciona o processo de adesão à Esteira de Parcerias no TRANSFEREGOV?
+1. Como funciona o processo de adesão ao Módulo de Gestão de Parcerias no TRANSFEREGOV?
 O ente local localiza a chamada pública ou edital no TRANSFEREGOV e realiza a manifestação de interesse digital direta, preenchendo as informações solicitadas e assinando o termo de adesão na própria plataforma, sem a burocracia dos convênios tradicionais.
 
 2. O que é a parametrização das políticas públicas no sistema?

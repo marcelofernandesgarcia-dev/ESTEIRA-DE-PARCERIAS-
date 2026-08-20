@@ -1,5 +1,5 @@
 === mapa_mental.txt ===
-Mapa Mental de Treinamento - Esteira de Parcerias e TRANSFEREGOV
+Mapa Mental de Treinamento - Módulo de Gestão de Parcerias e TRANSFEREGOV
 -----------------------------------------------------------------
 
 [TRILHA DE APRENDIZAGEM - TRANSFERÊNCIA SIMPLIFICADA]
