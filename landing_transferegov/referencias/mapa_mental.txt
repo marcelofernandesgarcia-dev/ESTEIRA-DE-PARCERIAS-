@@ -1,0 +1,31 @@
+=== mapa_mental.txt ===
+Mapa Mental da Transição para Transferências Simplificadas (TRANSFEREGOV)
+------------------------------------------------------------------------
+
+[TRANSFEREGOV - TRANSFERÊNCIAS SIMPLIFICADAS]
+ │
+ ├── 1. CONTEXTO INSTITUCIONAL & LEGAL
+ │    ├── Legislação do FNMA (Transição para repasse simplificado)
+ │    ├── Coordenação: Diretoria de Parcerias da União do MGI
+ │    └── Exclusividade Federativa (Estados e Municípios parceiros)
+ │
+ ├── 2. DESAFIOS DE ARQUITETURA SISTÊMICA
+ │    ├── SIORG/CORG: Definição do nó específico do FNMA
+ │    │    ├── Opção A: Conselho Deliberativo (Corg 1992)
+ │    │    └── Opção B: Depto de Gestão de Fundos (Corg 267384)
+ │    └── Integração externa Simpatinhas ↔ TRANSFEREGOV
+ │
+ ├── 3. AMBIENTES E SIMULAÇÃO
+ │    ├── Produção: Onde o recurso circula na vida real
+ │    ├── Homologação: Testes técnicos da equipe de TI
+ │    └── Treinamento: Laboratório seguro ("onde é permitido errar")
+ │
+ ├── 4. PARAMETRIZAÇÃO DAS POLÍTICAS AMBIENTAIS
+ │    ├── Programa Propatinhas (Castração/Proteção - Metas no Simpatinhas)
+ │    ├── Programa Prévfogo (Combate a incêndios - Planos Regionais)
+ │    ├── Metas Padronizadas (Agilidade de análise pelo concedente)
+ │    └── Cláusulas Suspensivas (Liberação com prazo de 1 ano para pendências)
+ │
+ └── 5. JORNADA DE CONTROLE & MITIGAÇÃO
+      ├── Relatório de Execução Simplificado (Foco estrito no objeto físico)
+      └── Mitigação do Defeso Eleitoral para o Prévfogo (Portaria de Emergência)

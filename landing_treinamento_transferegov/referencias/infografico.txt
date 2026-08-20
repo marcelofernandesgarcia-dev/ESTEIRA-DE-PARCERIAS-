@@ -1,0 +1,18 @@
+=== infografico.txt ===
+Especificações Visuais do Infográfico de Treinamento
+---------------------------------------------------
+
+Título: Descomplicando as Transferências Simplificadas no TRANSFEREGOV
+
+Conceito Visual: Trilha de aprendizado sequencial e comparativa (Siconvão vs. Nova Rota).
+
+Layout do Infográfico:
+- Painel Esquerdo: "O Caminho Longo (Convênio Tradicional)"
+  - Visual: Labirinto sinuoso, pilhas de papéis físicas, bloqueios e menção ao SIAFI/SICONV. Representa lentidão documental e re-burocratização.
+- Painel Central: "Decisão / Por que Mudar?"
+  - Mensagem: O modelo simplificado protege o gestor através da rastreabilidade ativa de dados, reduzindo as amarras procedimentais na ponta executora.
+- Painel Direito: "A Nova Rota (Transferência Simplificada)"
+  - Visual: Foguete decolando em direção a metas padronizadas e ícones de preservação ambiental (fauna e flora/fogo do caso exemplar FNMA).
+- Painel Inferior: "Ambientes de Uso"
+  - Apresenta o Ambiente de Treinamento como um laboratório onde errar é permitido, preparando o gestor para operar em Produção com segurança.
+- Base: Linha do tempo em 3 fases da jornada de internalização (Articulação, Parametrização e Lançamento).

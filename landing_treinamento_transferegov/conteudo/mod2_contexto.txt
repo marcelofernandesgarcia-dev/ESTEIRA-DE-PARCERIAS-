@@ -1,0 +1,14 @@
+=== mod2_contexto.txt ===
+Módulo 2 — O que é a Esteira de Parcerias
+
+Definição da Esteira de Parcerias:
+A Esteira de Parcerias é o processo técnico-administrativo de internalização das transferências na plataforma federal unificada, substituindo sistemas fragmentados. Trata-se de um modelo modular e unificado que permite programar regras e fluxos de negócio diretamente no sistema.
+
+Papel do MGI (Ministério da Gestão e da Inovação em Serviços Públicos):
+O MGI, por meio de sua Diretoria de Transferências e Parcerias da União, atua como o órgão central provedor da infraestrutura tecnológica, normativa e regulamentadora do TRANSFEREGOV, assegurando segurança jurídica e padronização a nível nacional.
+
+O que é o TRANSFEREGOV e sua Finalidade:
+O TRANSFEREGOV é o sistema unificado do Governo Federal para operacionalização de transferências e parcerias da União. Sua finalidade é desburocratizar a gestão pública de repasses, aumentar a integridade das operações e promover a transparência ativa com controle social.
+
+Caso Exemplar — FNMA (Fundo Nacional do Meio Ambiente):
+Como ilustração prática e didática deste treinamento, usaremos a transição do FNMA. Este fundo é um caso exemplar de sucesso na transição de seus recursos de fomento para a modalidade de Transferências Simplificadas, permitindo a liberação rápida de verbas para o desenvolvimento sustentável nos municípios sem a necessidade de convênios tradicionais complexos.

@@ -1,0 +1,22 @@
+=== mod3_comparativo.txt ===
+Módulo 3 — Transferência Simplificada vs. Convênio Tradicional
+
+Introdução à Mudança de Mentalidade:
+Para operar na Esteira de Parcerias, é essencial realizar um "mindset shift". A sistemática moderna abandona o controle do processo e foca no controle do resultado.
+
+Alternador de Mindset Interativo (Simulação de Fluxos):
+
+- Caso 1: Modelo Convênio (O antigo "Siconvão")
+  - Foco: Controle burocrático exaustivo do processo de despesa.
+  - Exigências: Cadastros analíticos extensivos, verificação fiscal de cada nota antes do repasse, registro manual de Ordem Bancária no SIAFI e amarras documentais que travam a execução local.
+  - Clima operacional: Paralisação técnica e excesso de diligências burocráticas.
+
+- Caso 2: Modelo Transferência Simplificada (A Nova Rota)
+  - Foco: Agilidade operacional com controle e monitoramento focado no objeto e nas metas entregues.
+  - Exigências: Adesão eletrônica simples ou manifestação de interesse, metas pré-configuradas (Metas Padronizadas), abertura automática de conta bancária e prestação de contas focada no resultado físico.
+  - Clima operacional: Celeridade e segurança jurídica documentada no TRANSFEREGOV.
+
+Quadro Comparativo Resumido:
+- Instrumento formal: No Siconvão, dependia de termos de convênios extensos e complexos. Na Transferência Simplificada, baseia-se em adesão simples e portaria específica.
+- Liberação do recurso: Antes dependia de homologação manual de planos complexos. Agora, o repasse é ágil com amarras focadas estritamente nas metas do plano de trabalho.
+- Rastreabilidade: A simplificação operacional mantém 100% dos dados registrados de ponta a ponta no TRANSFEREGOV para fins de auditoria.

@@ -1,0 +1,24 @@
+=== funcionalidades.txt ===
+1. Acesso Livre
+- Frase explicativa: Navegação por até 90% do sistema Gestão de Parcerias para consulta de menus e filtros sem necessidade de login.
+- Ícone sugerido: Olho aberto (ex: "eye" ou "visibility")
+
+2. Metas Padronizadas
+- Frase explicativa: Objetivos pré-configurados (como animais castrados ou hectares protegidos) que agilizam o preenchimento e a análise técnica.
+- Ícone sugerido: Grade de modelos / Lista (ex: "list-bulleted" ou "format-list-bulleted")
+
+3. Cláusula Suspensiva
+- Frase explicativa: Condição contratual que trava etapas futuras da parceria por até 1 ano até a entrega de planos de longo prazo ou pendências.
+- Ícone sugerido: Ampulheta com alerta (ex: "hourglass-warning" ou "history-toggle-off")
+
+4. Execução Integrada
+- Frase explicativa: Integração de metas com sistemas externos, como o Simpatinhas, centralizando as medições físicas de execução.
+- Ícone sugerido: Integração / API (ex: "sync-alt" ou "settings-input-component")
+
+5. Relatório Simplificado
+- Frase explicativa: Relatório de Execução focado estritamente no cumprimento do objeto e metas físicas, evitando planilhas analíticas redundantes.
+- Ícone sugerido: Documento com marca de verificação (ex: "description-check" ou "check-box")
+
+6. Painéis de Transparência
+- Frase explicativa: Painéis e dashboards que documentam todo o ciclo de repasse, assegurando transparência ativa e proteção legal aos gestores.
+- Ícone sugerido: Gráfico de barras (ex: "chart-bar" ou "analytics")

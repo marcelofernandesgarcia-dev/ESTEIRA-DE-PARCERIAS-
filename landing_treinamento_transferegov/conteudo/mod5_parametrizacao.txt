@@ -1,0 +1,15 @@
+=== mod5_parametrizacao.txt ===
+Módulo 5 — Parametrização por Política (Playground Interativo)
+
+O Conceito de Parametrização:
+A parametrização permite ao TRANSFEREGOV adaptar-se às especificidades de qualquer política de fomento da União sem necessidade de codificação personalizada de novos portais. As regras de negócio viram parâmetros sistêmicos configuráveis de acordo com a área finalística.
+
+Variáveis do Playground de Parametrização (Simulador Causa-Efeito):
+Ao simular diferentes cenários no treinamento, as seguintes variáveis alteram o fluxo da parceria em tempo real:
+1. Programa Selecionado: Prévfogo vs. Propatinhas (define o tipo de objeto, as metas e os sistemas externos associados).
+2. Índice de Desenvolvimento Humano (IDH): Alto vs. Baixo (altera automaticamente a contrapartida financeira exigida do município).
+3. Região da Parceria: Amazônia Legal vs. Outras Regiões (determina se há exigência de anexos obrigatórios como plano local de contingência ambiental).
+
+Caso Exemplar FNMA — Detalhes Parametrizados:
+- Caso Propatinhas (Proteção Animal): A parametrização exige que o município apresente a comprovação de adesão ao programa nacional. O sistema realiza integração com o "Simpatinhas" (sistema externo), de onde coleta o quantitativo físico de animais manejados para compor o Relatório de Execução Simplificado.
+- Caso Prévfogo (Prevenção a Incêndios): Por sua complexidade de campo, a parametrização exige a elaboração de planos locais de prevenção contra incêndios florestais e anexos de contingência para os municípios situados na Amazônia Legal, associando prazos limites por meio de Cláusulas Suspensivas de até 1 ano.

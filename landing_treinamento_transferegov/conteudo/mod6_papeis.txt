@@ -1,0 +1,17 @@
+=== mod6_papeis.txt ===
+Módulo 6 — Papéis e Responsabilidades
+
+Tabela de Perfis e Permissões no TRANSFEREGOV:
+
+| Perfil | Função | Permissão / Ação Sistêmica |
+| :--- | :--- | :--- |
+| **Concedente** ([ÓRGÃO]) | Gestor do programa federal que financia as parcerias. | - Cadastrar e parametrizar o edital da política pública.<br>- Analisar a conformidade e aprovar a manifestação de interesse dos entes. |
+| **Proponente** (Estado/Município) | Servidor local executor da parceria. | - Cadastrar a manifestação de interesse eletrônica.<br>- Selecionar metas padronizadas e enviar documentos.<br>- Efetuar pagamentos bancários e preencher o Relatório de Execução. |
+| **Técnico Finalístico** | Responsável pelo acompanhamento técnico e vistorias. | - Visualizar o andamento dos planos de trabalho.<br>- Inserir relatórios de monitoramento das metas físicas no sistema. |
+| **Ordenador de Despesas** | Autoridade financeira que homologa pagamentos. | - Realizar simulações de empenho e testes (Ambiente de Treinamento).<br>- Autorizar liberação financeira real dos recursos (Ambiente de Produção). |
+
+Caso Exemplar FNMA — Quem são os atores:
+- Concedente: Equipe gestora do FNMA lotada no [ÓRGÃO].
+- Proponente: Secretários municipais de meio ambiente ou gestores locais que manifestam interesse nas verbas de castração ou prevenção a incêndio.
+- Técnico Finalístico: Fiscais do [ÓRGÃO] que vistoriam a execução das clínicas de castração ou as brigadas contra queimadas do Prévfogo.
+- Ordenador de Despesas: Gestor financeiro do departamento de fundos do [ÓRGÃO].

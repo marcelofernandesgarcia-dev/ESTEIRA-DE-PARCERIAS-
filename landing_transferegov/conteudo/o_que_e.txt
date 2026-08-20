@@ -1,0 +1,11 @@
+=== o_que_e.txt ===
+Seção "O que é a Esteira de Parcerias":
+A Esteira de Parcerias é o processo técnico-administrativo de internalização das transferências no TRANSFEREGOV, coordenado pelo MGI em cooperação com o [ÓRGÃO]. Ela atua como a infraestrutura que viabiliza a transição das políticas públicas financiadas pelo FNMA para o modelo moderno de Transferências Simplificadas, unificando a tecnologia e eliminando instrumentos jurídicos complexos.
+
+Seção "O que é o TRANSFEREGOV":
+O TRANSFEREGOV é a plataforma federal de gestão de repasses que operacionaliza a nova rota de Transferências Simplificadas do [ÓRGÃO]. O sistema dispõe de três ambientes dedicados: Produção (onde o recurso circula), Homologação (para testes da TI) e o Ambiente de Treinamento (um laboratório seguro onde gestores podem simular empenhos e pagamentos sem risco fiscal).
+
+Dados-chave e marcos do sistema:
+1. Transição FNMA: Migração completa dos recursos do Fundo Nacional do Meio Ambiente para Transferências Simplificadas.
+2. Exclusividade Interfederativa: Fluxos operacionais dedicados exclusivamente a estados e municípios parceiros.
+3. Rastreabilidade Inteligente: Registro automático de todo o ciclo de repasse no sistema, assegurando dados auditáveis para órgãos de controle.

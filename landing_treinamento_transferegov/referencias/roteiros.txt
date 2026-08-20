@@ -1,0 +1,17 @@
+=== roteiros.txt ===
+Roteiros de Uso e Navegação de Capacitação (Storyboards)
+
+Roteiro de Treinamento 1 — O Secretário de Meio Ambiente Municipal:
+1. Entrada no Módulo 1 (Abertura): Compreende o propósito pedagógico do treinamento.
+2. Módulo 3 (Mindset Shift): Usa o alternador interativo de mindset para ver como o modelo simplificado corta caminhos em relação ao Siconvão.
+3. Módulo 4 (Jornada): Clica nas etapas da linha do tempo para entender quando o município deve agir.
+4. Módulo 5 (Playground): Testa o simulador selecionando "Propatinhas", definindo IDH baixo e vendo que a contrapartida é zero e que a API Simpatinhas será integrada.
+5. Módulo 7 (FAQ): Esclarece que o modelo simplificado não exige convênio tradicional.
+6. Módulo 8 (CTA): Clica para acessar o "Ambiente de Treinamento" do TRANSFEREGOV para criar uma proposta fictícia.
+
+Roteiro de Treinamento 2 — O Técnico de Acompanhamento do [ÓRGÃO]:
+1. Entrada no Módulo 1: Identifica-se como público-alvo do percurso conceitual.
+2. Módulo 5 (Playground): Testa o simulador no modo "Prévfogo" em município na Amazônia Legal, observando que o sistema exige o Plano de Contingência como anexo obrigatório.
+3. Módulo 6 (Papéis): Revisa suas permissões e as do Ordenador de Despesas.
+4. Módulo 7 (Erros Comuns): Identifica o "Sintoma do Convênio" como principal erro burocrático de avaliação técnica e entende como preveni-lo.
+5. Módulo 8 (Encerramento): Acessa os slides e o mapa mental complementar para apresentar no alinhamento semanal.

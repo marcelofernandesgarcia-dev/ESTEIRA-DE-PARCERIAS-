@@ -1,0 +1,31 @@
+=== mod7_faq_erros.txt ===
+Módulo 7 — Dúvidas Frequentes e Erros Comuns
+
+FAQ Accordion (Perguntas e Respostas):
+
+1. Isso vira um convênio tradicional?
+Não. É uma transferência simplificada, focada em metas físicas e resultados, sem a celebração de termos formais de convênio complexos.
+
+2. Precisa de plano de trabalho?
+Sim, mas ele é padronizado e simplificado diretamente no TRANSFEREGOV, bastando ao proponente selecionar as metas pré-configuradas.
+
+3. Como funciona a prestação de contas?
+A prestação de contas é simplificada e realizada por meio do Relatório de Execução, que comprova a entrega física e os resultados alcançados pela política.
+
+4. Qual o instrumento jurídico assinado pelas partes?
+Utiliza-se o ACT (Acordo de Cooperação Técnica) assinado eletronicamente nas fases de articulação inicial da parceria.
+
+5. Há restrições de repasses durante o defeso eleitoral?
+Sim, a legislação suspende transferências voluntárias federais comuns. Contudo, ações urgentes de combate (como o Prévfogo) contam com Portaria de Emergência para continuidade legal.
+
+Erros Comuns (Evite vs. Faça):
+
+| Evite (❌) | Faça (✅) |
+| :--- | :--- |
+| Exigir certidões, vistorias e relatórios analíticos redundantes que cabem apenas a convênios clássicos. | Focar o acompanhamento no cumprimento físico da meta e na entrega dos resultados na ponta da política. |
+| Iniciar a execução financeira diretamente em Produção sem antes treinar a equipe. | Realizar simulações completas de empenhos, metas e pagamentos no Ambiente de Treinamento. |
+| Deixar a manifestação e a proposição para o último trimestre fiscal do ano orçamentário. | Respeitar a curva de aprendizado técnico e formalizar a adesão no TRANSFEREGOV com antecedência. |
+| Cadastrar perfis idênticos para técnicos de acompanhamento e ordenadores de despesa. | Separar os perfis no sistema conforme as competências no SIORG e nas portarias organizacionais. |
+
+Alerta Principal: "Sintoma do Convênio"
+O "Sintoma do Convênio" é a tendência de equipes técnicas em exigir documentos e fiscalizações minuciosas de processos fiscais analíticos em um repasse legalmente classificado como simplificado. Essa atitude re-burocratiza e paralisa uma rota desenhada para ser ágil e direta.

@@ -1,0 +1,5 @@
+=== hero.txt ===
+Headline: TRANSFEREGOV: a nova era das Transferências Simplificadas
+Subtítulo: A evolução da gestão de repasses federais do [ÓRGÃO] sem a celebração de convênios tradicionais.
+Proposta de valor: A transição das políticas do FNMA para o modelo de Transferências Simplificadas elimina a burocracia documental e foca na entrega de resultados. Parametrizada no TRANSFEREGOV, a nova rota garante agilidade para estados e municípios e rastreabilidade total para controle social.
+Sugestão de visual de fundo: Visual moderno baseado no infográfico: à esquerda, o caminho sinuoso e cinza do 'Convênio Tradicional' com menção ao SIAFI; à direita, a 'Nova Rota' em tons de verde e azul vibrante mostrando um foguete simbolizando velocidade, decolando em direção a metas padronizadas e ícones representativos de fauna (Propatinhas) e flora/fogo (Prévfogo).

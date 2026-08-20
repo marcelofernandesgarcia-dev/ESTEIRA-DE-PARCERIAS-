@@ -1,0 +1,34 @@
+=== infografico.txt ===
+Especificações do Infográfico "Descomplicando as Transferências Simplificadas"
+-----------------------------------------------------------------------------
+
+Título Principal: Descomplicando as Transferências Simplificadas: Guia para o [ÓRGÃO] no TRANSFEREGOV
+
+Estrutura Visual:
+- Duas colunas principais (Comparativo de Rota e Programas/Ambientes) + Linha do Tempo inferior.
+
+Coluna Esquerda - Comparação de Rotas:
+1. Convênio Tradicional (O Caminho Longo):
+   - Descrição: Envolve celebração de instrumentos complexos, cadastros exaustivos, registro de TV no SIAFI e uma jornada burocrática mais intensa entre o repassador e o ente federado.
+   - Ícone: Caminho sinuoso ligando papéis à marca SIAFI e bloqueio.
+2. Mudança de Rota (Decisão):
+   - Pergunta: Por que mudar?
+   - Resposta: A Transferência Simplificada oferece transparência total e rastreabilidade para os órgãos de controle, mas com uma "amarra operacional" reduzida para o gestor na ponta.
+3. Transferência Simplificada (A Nova Rota):
+   - Descrição: Modelo célere baseado em adesão ou manifestação de interesse, com metas padronizáveis, sem necessidade de convênio formal, focado em agilidade para estados e municípios.
+   - Ícones: Checkmark verde, aperto de mãos e foguete.
+
+Coluna Direita - Programas & Ambientes:
+1. Programas em Foco (FNMA):
+   - Programa Propatinhas: Focado na proteção animal e controle populacional (como castração de cães e gatos). Utiliza metas padronizadas e pode exigir comprovação de adesão ao programa nacional.
+   - Programa Prévfogo: Voltado para a prevenção, combate e enfrentamento de incêndios florestais. Pode exigir parâmetros regionais (ex: Amazônia Legal) e anexos obrigatórios, como planos locais de contingência.
+   - Metas Padronizáveis: No sistema, os objetivos da política (ex: número de animais castrados ou hectares protegidos) tornam-se metas pré-configuradas para facilitar a prestação de contas.
+2. Os Ambientes do TRANSFEREGOV:
+   - Ambiente de Treinamento (Permitido Errar): Espaço para simular empenhos, pagamentos e análises sem risco real; essencial para a familiarização da equipe antes da execução oficial.
+   - Ambiente de Produção (A Vida Real): Onde as transferências de recursos ocorrem de fato, gerando obrigações legais ou financeiras reais.
+   - Acesso Livre e Navegação: Grande parte do módulo de Gestão de Parcerias pode ser consultado sem login para aprendizado despretensioso sobre menus e filtros.
+
+Linha do Tempo Inferior - A Jornada de Internalização:
+- Fase 1 (Articulação e Mapeamento): Assinatura de Acordos de Cooperação Técnica (ACT) e levantamento de requisitos sistêmicos baseados na legislação.
+- Fase 2 (Parametrização e Testes): Configuração do sistema para o [ÓRGÃO], definição de perfis (SIORG) e treinamento das equipes técnicas nos ambientes de simulação.
+- Fase 3 (Lançamento e Sustentação): Realização de Webinários no YouTube, publicação de cartilhas tutoriais e início efetivo dos repasses com monitoramento via painéis de transparência.

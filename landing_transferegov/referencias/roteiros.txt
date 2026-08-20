@@ -1,0 +1,15 @@
+=== roteiros.txt ===
+Roteiros de Uso e Navegação do Usuário (Storyboards / User Journeys)
+-------------------------------------------------------------------
+
+Roteiro 1: O Gestor do Propatinhas no Município
+1. Entrada na Landing Page: Interessa-se pelo título no Hero sobre simplificação de repasses do FNMA.
+2. Leitura da Proposta de Valor: Descobre que o [ÓRGÃO] migrou o programa para o modelo de Transferência Simplificada.
+3. Parametrização das Metas (parametrizacao.txt): Entende que o registro detalhado ocorrerá via Simpatinhas e alimentará o TRANSFEREGOV.
+4. Experimentação (CTA): Clica em "Experimente o Ambiente de Treinamento" para simular a adesão e o fluxo de preenchimento sem risco fiscal.
+
+Roteiro 2: O Técnico Finalístico do [ÓRGÃO] (Prévfogo)
+1. Entrada na Landing Page: Procura informações para orientar municípios sobre o combate a incêndios florestais.
+2. Leitura sobre Prazos e Riscos (boas_praticas.txt): Alerta-se sobre a importância de usar a Portaria de Emergência contra restrições de defeso.
+3. Consulta de Perfis (papeis_permissoes.txt): Confirma que o perfil Técnico Finalístico serve para alimentar os relatórios de monitoramento das metas físicas.
+4. Navegação Livre (CTA): Utiliza a opção "Navegue em Acesso Livre" para consultar o fluxo de Atos Preparatórios no módulo Gestão de Parcerias.

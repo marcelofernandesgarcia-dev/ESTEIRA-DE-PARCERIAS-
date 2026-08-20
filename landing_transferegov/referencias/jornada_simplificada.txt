@@ -1,0 +1,20 @@
+=== jornada_simplificada.txt ===
+Especificação Detalhada da Jornada Simplificada
+
+Fluxo Sistêmico das Transferências no TRANSFEREGOV:
+
+1. Abertura do Chamamento:
+   - O [ÓRGÃO] cadastra o edital definindo as regras, contrapartidas e metas padronizadas.
+   - Parâmetros baseados nas diretrizes do FNMA (ex: proteção animal ou brigadas florestais).
+
+2. Adesão e Manifestação:
+   - Estados e Municípios manifestam interesse eletrônico diretamente no TRANSFEREGOV.
+   - O proponente seleciona as Metas Padronizadas pré-configuradas para sua região, dispensando planos complexos.
+
+3. Homologação e Conta Bancária:
+   - Análise rápida e validação técnica da proposta pelo [ÓRGÃO].
+   - Emissão da Nota de Empenho e abertura imediata da conta vinculada automática no banco parceiro do Governo Federal.
+
+4. Liquidação e Relatório:
+   - O proponente executa as ações locais.
+   - Efetua pagamentos de despesas vinculadas pelo sistema e emite o Relatório de Execução Simplificado (comprovando os resultados físicos alcançados).

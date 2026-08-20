@@ -1,0 +1,23 @@
+=== mod8_glossario_encerramento.txt ===
+Módulo 8 — Glossário e Encerramento
+
+Glossário Visual (8 Termos Essenciais):
+1. TRANSFEREGOV: Plataforma de gestão unificada de repasses e parcerias da União.
+2. SIORG: Sistema organizacional federal para cadastrar unidades administrativas e fluxos.
+3. Transferência Simplificada: Repasse direto focado em metas físicas sem termo de convênio.
+4. Cláusula Suspensiva: Condição que permite o repasse, mas trava etapas futuras por até 1 ano para saneamento de pendências.
+5. ACT (Acordo de Cooperação Técnica): Instrumento inicial de cooperação e articulação sem repasse de verbas.
+6. Defeso Eleitoral: Período restritivo pré-eleições que bloqueia transferências voluntárias federais comuns.
+7. Metas Padronizadas: Modelos prontos de metas físicas que agilizam o preenchimento da manifestação de interesse.
+8. Relatório de Execução Simplificado: Comprovação enxuta focada na meta e no objeto físico entregue pela parceria.
+
+Encerramento e Chamadas para Ação:
+Você concluiu a trilha de aprendizagem conceitual das Transferências Simplificadas! Agora é hora de testar os conhecimentos adquiridos na prática.
+
+Botão Principal:
+- Ação: Abrir o laboratório simulado do TRANSFEREGOV.
+- Texto: Acesse o Ambiente de Treinamento do TRANSFEREGOV
+
+Botão Secundário:
+- Ação: Acessar a biblioteca de materiais de apoio (Mapas Mentais, Infográficos, Tutoriais em Áudio/Vídeo e Slides de Nivelamento).
+- Texto: Conclua seu Treinamento e Acesse Materiais

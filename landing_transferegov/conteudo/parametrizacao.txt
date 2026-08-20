@@ -1,0 +1,15 @@
+=== parametrizacao.txt ===
+Como o TRANSFEREGOV se adapta a políticas:
+A parametrização do TRANSFEREGOV traduz as diretrizes das políticas ambientais do [ÓRGÃO] em regras sistêmicas. Ela permite configurar regras específicas para programas como o Propatinhas e o Prévfogo diretamente no sistema, assegurando conformidade legal sem burocratizar o fluxo operacional.
+
+Pontos de Configuração (Exemplos Práticos):
+1. Integração Externa (Propatinhas): Integração lógica com o sistema Simpatinhas para monitoramento de animais domésticos.
+   - Exemplo prático: O registro de castrações feitas no Simpatinhas alimenta de forma automática as metas do TRANSFEREGOV.
+2. Complexidade Regional (Prévfogo): Parametrização para exigência de planos específicos de prevenção baseados na localização.
+   - Exemplo prático: Projetos na Amazônia Legal exigem anexos obrigatórios de planos locais de contingência contra queimadas.
+3. Mecanismo de Liberação Segura (Cláusula Suspensiva): Liberação do recurso inicial enquanto se concede o prazo de até 1 ano para entrega de planos de longo prazo.
+   - Exemplo prático: O município recebe a verba, mas a homologação de fases futuras fica travada até o envio do plano municipal.
+
+Diagrama sugerido (Layout do Fluxo Paramétrico):
+"Diagrama de Parametrização Temática do [ÓRGÃO]":
+Uma linha horizontal dividida. No topo esquerdo, o fluxo 'Propatinhas' se conecta à caixa 'TRANSFEREGOV (Metas Padronizadas)' e recebe inputs diretos da API externa 'Simpatinhas'. No topo direito, o fluxo 'Prévfogo' passa por validações de 'Parâmetros Regionais (Amazônia Legal)' e exige o 'Plano de Contingência' no sistema. Ambas as trilhas convergem para um bloco inferior de 'Monitoramento Unificado', que gera o 'Relatório de Execução Simplificado' pronto para auditorias de órgãos de controle. O layout é limpo com tons azuis e verdes.

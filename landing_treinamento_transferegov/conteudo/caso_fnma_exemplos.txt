@@ -1,0 +1,16 @@
+=== caso_fnma_exemplos.txt ===
+Casos de Estudo Exemplares do FNMA (Fundo Nacional do Meio Ambiente)
+
+1. Programa Propatinhas:
+   - Foco: Proteção animal e controle de natalidade populacional (castrações).
+   - Parametrização Sistêmica: O município precisa comprovar no TRANSFEREGOV que aderiu ao programa nacional de proteção animal.
+   - Integração com Sistemas Externos: O sistema realiza chamadas de API com a base de dados do "Simpatinhas", sistema auxiliar do [ÓRGÃO] onde os cadastros de animais são inseridos. As medições físicas deste sistema atualizam de forma automática o Relatório de Execução Simplificado do TRANSFEREGOV.
+
+2. Programa Prévfogo:
+   - Foco: Prevenção, combate e resposta a incêndios florestais em áreas críticas.
+   - Parametrização Sistêmica: Projetos situados na Amazônia Legal exigem anexos obrigatórios, como planos regionais de combate e contingenciamento.
+   - Mitigação de Riscos de Defeso Eleitoral: As ações do Prévfogo contam com a Portaria de Emergência Ambiental do Governo Federal, amparo legal que permite a continuidade da liberação orçamentária mesmo em períodos de blackout eleitoral.
+
+3. Desafio Organizacional de SIORG / CORG:
+   - Contexto: Para que a plataforma realize Atos Preparatórios corretos, as unidades do [ÓRGÃO] precisam estar cadastradas no SIORG. O FNMA não dispõe atualmente de um nó organizacional direto na base do CIORG.
+   - Discussão de Solução: Nas reuniões técnicas entre a equipe do [ÓRGÃO] e MGI, debate-se a vinculação das parcerias ao código do Conselho Deliberativo do FNMA (Corg 1992) ou à estrutura do Departamento de Gestão de Fundos (Corg 267384). Essa parametrização organizadora com a TI do MGI garante que o órgão repassador esteja corretamente identificado no ciclo financeiro.

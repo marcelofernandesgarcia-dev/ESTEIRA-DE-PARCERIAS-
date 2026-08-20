@@ -1,0 +1,33 @@
+=== mapa_mental.txt ===
+Mapa Mental de Treinamento - Esteira de Parcerias e TRANSFEREGOV
+-----------------------------------------------------------------
+
+[TRILHA DE APRENDIZAGEM - TRANSFERÊNCIA SIMPLIFICADA]
+ │
+ ├── 1. CONCEITO & BASE LEGAL
+ │    ├── Substituição dos convênios clássicos (Siconvão)
+ │    ├── Repasse voluntário via portaria e termo de adesão
+ │    └── Exclusividade federativa (Estados e Municípios)
+ │
+ ├── 2. ESTRUTURA SISTÊMICA & AMBIENTES
+ │    ├── Módulo Gestão de Parcerias
+ │    ├── Ambiente de Produção (Recursos reais)
+ │    ├── Ambiente de Homologação (Testes de novas rotas pela TI)
+ │    └── Ambiente de Treinamento (Laboratório seguro / Simulação)
+ │
+ ├── 3. PARAMETRIZAÇÃO POR POLÍTICA (Caso FNMA)
+ │    ├── Propatinhas (Castrações / Integração API Simpatinhas)
+ │    ├── Prévfogo (Prevenção de Incêndios / Planos de Contingência)
+ │    ├── Metas Padronizadas (Agilidade e preenchimento simples)
+ │    └── Cláusulas Suspensivas (Até 1 ano para entrega de planos)
+ │
+ ├── 4. JORNADA OPERACIONAL (4 Passos)
+ │    ├── Passo 1: Convocatória (Órgão configura edital)
+ │    ├── Passo 2: Proposição (Ente manifesta interesse e seleciona metas)
+ │    ├── Passo 3: Validação (Órgão valida, empenha e conta abre automático)
+ │    └── Passo 4: Execução (Pagamentos em sistema e Relatório de Execução)
+ │
+ └── 5. CONTROLES & RISCOS
+      ├── Defeso Eleitoral (Mitigado por Portaria de Emergência no Prévfogo)
+      ├── Rastreabilidade ativa de dados para órgãos de controle
+      └── Evitar o "Sintoma do Convênio" (Não re-burocratizar o fluxo)

@@ -1,0 +1,15 @@
+=== duvidas_faq.txt ===
+1. A transferência simplificada exige a assinatura de convênio?
+Destaque: Não é convênio tradicional. O modelo baseia-se em manifestação de interesse/adesão e portaria específica, acelerando o recebimento do recurso.
+
+2. Como é aberta a conta bancária da parceria simplificada?
+O processo de abertura bancária é totalmente automatizado pelo próprio TRANSFEREGOV logo após a validação técnica da proposta.
+
+3. Como comprovar o uso correto dos recursos recebidos?
+Através do preenchimento do Relatório de Execução Simplificado focado estritamente no cumprimento do objeto físico pactuado.
+
+4. Podemos utilizar a nova plataforma para gerir emendas parlamentares?
+Sim, o TRANSFEREGOV está plenamente preparado para a recepção e a parametrização de emendas parlamentares do [ÓRGÃO].
+
+5. Qual o risco de utilizar o modelo de transferência simplificado?
+O maior risco é a ausência ou inconsistência de dados; portanto, a alimentação tempestiva do TRANSFEREGOV pelas equipes é indispensável.

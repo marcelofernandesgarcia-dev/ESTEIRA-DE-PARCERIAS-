@@ -1,0 +1,8 @@
+=== papeis_permissoes.txt ===
+Tabela de Perfis de Acesso no TRANSFEREGOV para o [ÓRGÃO]:
+
+| Perfil | Função | Permissão / Ação Sistêmica |
+| :--- | :--- | :--- |
+| **Técnico Finalístico** | Acompanhamento técnico do repasse. | - Visualização de dados gerais.<br>- Alimentação e análise de relatórios de monitoramento das metas. |
+| **Gestor do Programa** | Estruturação da política pública. | - Parametrização de programas, metas e regras de adesão no sistema. |
+| **Ordenador de Despesas** | Execução financeira e homologações. | - Simulação de empenho e pagamentos (Ambiente de Treinamento).<br>- Execução orçamentária e financeira real (Ambiente de Produção). |

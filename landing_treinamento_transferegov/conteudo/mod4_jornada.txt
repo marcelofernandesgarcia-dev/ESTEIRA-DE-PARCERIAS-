@@ -1,0 +1,28 @@
+=== mod4_jornada.txt ===
+Módulo 4 — A Jornada da Transferência (Passo a Passo)
+
+A trilha operacional das Transferências Simplificadas é dividida em 4 etapas bem-definidas no TRANSFEREGOV. Veja o fluxo:
+
+Etapa 1: Convocatória / Configuração
+- Responsável: Concedente ([ÓRGÃO])
+- Ação Sistêmica: Cadastro do programa de chamamento público no sistema, definição das regras de contrapartida, prazos de validade e parâmetros.
+- Documento Gerado: Edital / Cadastro de Programa de Fomento.
+- Caso Exemplar FNMA: O [ÓRGÃO] abre o edital do FNMA parametrizando as metas do Propatinhas e do Prévfogo.
+
+Etapa 2: Proposição / Metas
+- Responsável: Proponente (Estado / Município)
+- Ação Sistêmica: Adesão eletrônica ao chamamento através da manifestação de interesse e seleção das Metas Padronizadas pré-definidas.
+- Documento Gerado: Plano de Trabalho Padronizado.
+- Caso Exemplar FNMA: Municípios aderem ao programa Propatinhas e selecionam a meta pré-homologada de "castração de cães e gatos".
+
+Etapa 3: Validação / Empenho
+- Responsável: Concedente ([ÓRGÃO])
+- Ação Sistêmica: Análise técnica rápida da manifestação de interesse, validação das metas, emissão de empenho orçamentário e abertura automatizada da conta bancária específica da parceria.
+- Documento Gerado: Nota de Empenho e Ordem de Abertura de Conta.
+- Caso Exemplar FNMA: O [ÓRGÃO] aprova a adesão do município, abrindo a conta bancária da parceria de forma automática no TRANSFEREGOV.
+
+Etapa 4: Execução / Prestação
+- Responsável: Proponente (Estado / Município)
+- Ação Sistêmica: Realização dos pagamentos via transferência bancária integrada e preenchimento periódico do Relatório de Execução Simplificado focado estritamente nas metas físicas entregues.
+- Documento Gerado: Relatório de Execução Simplificado (dados de objeto cumprido).
+- Caso Exemplar FNMA: O município realiza os pagamentos das clínicas parceiras e insere no sistema o número de animais castrados (comprovado via integração Simpatinhas).

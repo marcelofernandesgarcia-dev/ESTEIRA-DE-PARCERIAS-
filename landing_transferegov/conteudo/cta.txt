@@ -1,0 +1,12 @@
+=== cta.txt ===
+Botão Principal:
+- Ação: Direcionar para a simulação técnica no Ambiente de Treinamento do TRANSFEREGOV.
+- Texto: Experimente o Ambiente de Treinamento
+
+Botão Secundário:
+- Ação: Navegar no TRANSFEREGOV em modo Acesso Livre.
+- Texto: Navegue em Acesso Livre
+
+Texto de Encerramento:
+Modernize a gestão ambiental do seu município com o modelo ágil de Transferências Simplificadas.
+Evite a burocracia documental dos convênios tradicionais e garanta agilidade com a segurança do [ÓRGÃO].

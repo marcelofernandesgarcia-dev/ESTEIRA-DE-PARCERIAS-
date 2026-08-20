@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento TRANSFEREGOV — Esteira de Parcerias</title>
+  <meta name="description" content="Trilha de capacitação interativa oficial do [ÓRGÃO] sobre a transição das políticas do FNMA para as Transferências Simplificadas no TRANSFEREGOV.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        TRANSFEREGOV <span>Trilha [ÓRGÃO]</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#mod1" class="active">Abertura</a></li>
+          <li><a href="#mod2">Esteira</a></li>
+          <li><a href="#mod3">Comparativo</a></li>
+          <li><a href="#mod4">Jornada</a></li>
+          <li><a href="#mod5">Playground</a></li>
+          <li><a href="#mod6">Papéis</a></li>
+          <li><a href="#mod7">FAQ</a></li>
+          <li><a href="#mod8">Glossário</a></li>
+          <li><a href="https://www.gov.br/transferegov" target="_blank" class="btn-nav">Portal Oficial</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Módulo 1: Abertura e Contexto -->
+  <section id="mod1">
+    <div class="hero-badge">
+      <span></span> Material de Treinamento Oficial
+    </div>
+    <h1 class="hero-title">Domine o TRANSFEREGOV: da conceituação à execução</h1>
+    <p class="hero-desc">
+      Aprenda a operar a Esteira de Parcerias e conheça o processo de modernização das Transferências Simplificadas. 
+      Esta trilha sequencial capacita gestores estaduais e municipais na prática.
+    </p>
+    <div class="hero-actions">
+      <a href="#mod2" class="btn-primary">
+        Iniciar Treinamento
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="#mod5" class="btn-secondary">Testar Playground</a>
+    </div>
+  </section>
+
+  <!-- Módulo 2: O que é a Esteira de Parcerias -->
+  <section id="mod2">
+    <span class="section-tag">Módulo 2</span>
+    <h2 class="section-title">O que é a Esteira de Parcerias?</h2>
+    <p class="section-subtitle">A unificação tecnológica liderada pelo MGI para agilizar as políticas de fomento em nível nacional.</p>
+    
+    <div class="context-grid">
+      <div class="context-cards">
+        <div class="context-card">
+          <h3>A Esteira de Parcerias</h3>
+          <p>É a infraestrutura unificada do TRANSFEREGOV que permite programar regras e fluxos de negócio diretamente no sistema. Em vez de criar portais complexos para cada programa, o MGI oferece módulos flexíveis adaptados a cada área finalística.</p>
+        </div>
+        <div class="context-card">
+          <h3>O Papel do MGI</h3>
+          <p>O Ministério da Gestão e da Inovação em Serviços Públicos atua como o provedor da infraestrutura sistêmica e do marco regulatório, garantindo a uniformidade de processos e a segurança jurídica de todos os entes do país.</p>
+        </div>
+        <div class="context-card">
+          <h3>O TRANSFEREGOV</h3>
+          <p>O sistema substitui ferramentas fragmentadas e centraliza a gestão financeira e física das parcerias federais. Com isso, assegura total transparência ativa e rastreabilidade para o cidadão e para os órgãos de controle.</p>
+        </div>
+      </div>
+      
+      <!-- Caso Exemplar FNMA Card -->
+      <div class="case-highlight">
+        <div class="case-badge">Caso Exemplar (FNMA)</div>
+        <h3>O Fundo Nacional do Meio Ambiente</h3>
+        <p>
+          Como ilustração didática ao longo deste treinamento, o FNMA atua como o caso exemplar. Suas políticas públicas de preservação e fomento ecológico migraram completamente para a modalidade de <strong>Transferências Simplificadas</strong>, permitindo parcerias céleres e sem convênios complexos para municípios.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 3: Siconvão vs. Transferência Simplificada -->
+  <section id="mod3">
+    <div class="glass-panel">
+      <span class="section-tag">Módulo 3</span>
+      <h2 class="section-title">Transferência Simplificada vs. Convênio Tradicional</h2>
+      <p class="section-subtitle">A transição cultural de gestão: abandone a burocracia focada em processos e domine o controle de resultados.</p>
+      
+      <div class="mindset-container">
+        <!-- Interactive Mode Switcher -->
+        <div class="mindset-toggle siconvao-active" id="mindset-toggle-wrapper">
+          <button class="toggle-btn active" id="btn-siconvao">Siconvão Tradicional</button>
+          <button class="toggle-btn" id="btn-simplificado">Transferência Simplificada</button>
+          <div class="toggle-slider"></div>
+        </div>
+
+        <div class="mindset-panels">
+          <!-- Siconvao Panel -->
+          <div class="mindset-panel siconvao active" id="panel-siconvao">
+            <div class="panel-info">
+              <h3>O Modelo Convênio (Burocrático)</h3>
+              <p>O antigo modelo é baseado na fiscalização do meio. Foca nas comprovações documentais exaustivas antes da liberação orçamentária, gerando gargalos.</p>
+              <div class="panel-features">
+                <div class="feature-item">
+                  <div class="icon">❌</div>
+                  <p>Celebração de convênios analíticos exaustivos e contratos complexos de repasse.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="icon">❌</div>
+                  <p>Registro manual e obrigatório de ordens bancárias via SIAFI pelo gestor.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="icon">❌</div>
+                  <p>Prestação de contas exaustiva de notas fiscais unitárias e documentos burocráticos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-preview">
+              <div class="preview-graphic">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+              </div>
+              <p style="color: var(--accent-red); font-weight: 700;">Gargalo Sistêmico</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Processamento analítico manual, diligências frequentes e atrasos.</p>
+            </div>
+          </div>
+
+          <!-- Simplificado Panel -->
+          <div class="mindset-panel simplificado" id="panel-simplificado">
+            <div class="panel-info">
+              <h3>A Nova Rota (Foco em Resultados)</h3>
+              <p>A sistemática de transferências simplificadas prioriza a agilidade operacional aliada ao monitoramento estrito do objeto físico e das entregas da política pública.</p>
+              <div class="panel-features">
+                <div class="feature-item">
+                  <div class="icon">✅</div>
+                  <p>Adesão e manifestação eletrônica simples de interesse no TRANSFEREGOV.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="icon">✅</div>
+                  <p>Abertura automática de conta bancária vinculada logo após validação rápida.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="icon">✅</div>
+                  <p>Relatório de Execução Simplificado com dados e foco na meta concluída.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-preview">
+              <div class="preview-graphic">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              </div>
+              <p style="color: var(--primary); font-weight: 700;">Fluxo Ágil & Automatizado</p>
+              <p class="text-secondary" style="font-size: 0.85rem; margin-top: 0.5rem;">Uso de metas pré-homologadas, integração com APIs e prestação rápida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 4: A Jornada da Transferência -->
+  <section id="mod4">
+    <span class="section-tag">Módulo 4</span>
+    <h2 class="section-title">A Jornada da Transferência Simplificada</h2>
+    <p class="section-subtitle">O fluxo lógico percorrido de ponta a ponta na esteira para efetivação de repasses.</p>
+    
+    <div class="timeline-container">
+      <!-- Steps Selection -->
+      <div class="timeline-steps">
+        <div class="timeline-step active" data-step="1">
+          <div class="step-num">01</div>
+          <div class="step-summary">
+            <h4>Convocatória / Configuração</h4>
+            <p>Configuração do edital pelo concedente</p>
+          </div>
+        </div>
+        <div class="timeline-step" data-step="2">
+          <div class="step-num">02</div>
+          <div class="step-summary">
+            <h4>Proposição / Metas</h4>
+            <p>Adesão e seleção das metas padronizadas</p>
+          </div>
+        </div>
+        <div class="timeline-step" data-step="3">
+          <div class="step-num">03</div>
+          <div class="step-summary">
+            <h4>Validação / Empenho</h4>
+            <p>Homologação técnica e liberação automática</p>
+          </div>
+        </div>
+        <div class="timeline-step" data-step="4">
+          <div class="step-num">04</div>
+          <div class="step-summary">
+            <h4>Execução / Prestação</h4>
+            <p>Comprovação do objeto físico entregue</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Showcase Window -->
+      <div class="timeline-details">
+        
+        <!-- View 1 -->
+        <div class="detail-view active" id="detail-1">
+          <div class="detail-header">
+            <h3>Etapa 1: Convocatória / Configuração</h3>
+            <span style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">ÓRGÃO FEDERAL</span>
+          </div>
+          <div class="detail-meta-grid">
+            <div class="meta-box">
+              <h5>Responsável</h5>
+              <p>Concedente (Equipe Técnica do [ÓRGÃO])</p>
+            </div>
+            <div class="meta-box">
+              <h5>Ação Sistêmica</h5>
+              <p>Cadastro do chamamento, definição de limites orçamentários, contrapartidas e parametrização do programa.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Documento do Sistema</h5>
+              <p>Edital de Chamamento e Parâmetros Regulados.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Canal do Sistema</h5>
+              <p>Módulo de Gestão de Parcerias.</p>
+            </div>
+          </div>
+          <div class="detail-case-box">
+            <h5>Ilustração do Caso FNMA</h5>
+            <p>O [ÓRGÃO] cria o chamamento no TRANSFEREGOV parametrizando as políticas do FNMA para Propatinhas ou Prévfogo com regras e metas pré-definidas.</p>
+          </div>
+        </div>
+
+        <!-- View 2 -->
+        <div class="detail-view" id="detail-2">
+          <div class="detail-header">
+            <h3>Etapa 2: Proposição / Metas</h3>
+            <span style="color: var(--primary); font-size: 0.8rem; font-weight: 700;">ENTE PARCEIRO</span>
+          </div>
+          <div class="detail-meta-grid">
+            <div class="meta-box">
+              <h5>Responsável</h5>
+              <p>Proponente (Município ou Estado)</p>
+            </div>
+            <div class="meta-box">
+              <h5>Ação Sistêmica</h5>
+              <p>Manifestação eletrônica de interesse no edital aberto e seleção das metas padronizadas compatíveis com a capacidade local.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Documento do Sistema</h5>
+              <p>Manifestação de Adesão e Plano de Trabalho Padronizado.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Prazo Sistêmico</h5>
+              <p>Definido conforme edital da chamada.</p>
+            </div>
+          </div>
+          <div class="detail-case-box">
+            <h5>Ilustração do Caso FNMA</h5>
+            <p>O município seleciona a meta padronizada de "Unidades de castração de animais" do Propatinhas, dispensando planos técnicos longos.</p>
+          </div>
+        </div>
+
+        <!-- View 3 -->
+        <div class="detail-view" id="detail-3">
+          <div class="detail-header">
+            <h3>Etapa 3: Validação / Empenho</h3>
+            <span style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">FLUXO CENTRAL</span>
+          </div>
+          <div class="detail-meta-grid">
+            <div class="meta-box">
+              <h5>Responsável</h5>
+              <p>Concedente / MGI / Automação</p>
+            </div>
+            <div class="meta-box">
+              <h5>Ação Sistêmica</h5>
+              <p>Análise de conformidade da adesão, homologação final, emissão eletrônica de empenho e abertura automática de conta bancária.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Documento do Sistema</h5>
+              <p>Atestado de Validação e Nota de Empenho Bancário.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Diferencial</h5>
+              <p>Sem contrato analítico exaustivo de repasse.</p>
+            </div>
+          </div>
+          <div class="detail-case-box">
+            <h5>Ilustração do Caso FNMA</h5>
+            <p>O [ÓRGÃO] valida a documentação, gerando o empenho e abrindo a conta bancária da parceria de forma instantânea para o município.</p>
+          </div>
+        </div>
+
+        <!-- View 4 -->
+        <div class="detail-view" id="detail-4">
+          <div class="detail-header">
+            <h3>Etapa 4: Execução / Prestação</h3>
+            <span style="color: var(--primary); font-size: 0.8rem; font-weight: 700;">PRESTAÇÃO FÍSICA</span>
+          </div>
+          <div class="detail-meta-grid">
+            <div class="meta-box">
+              <h5>Responsável</h5>
+              <p>Proponente (Município ou Estado)</p>
+            </div>
+            <div class="meta-box">
+              <h5>Ação Sistêmica</h5>
+              <p>Liquidação e pagamentos eletrônicos em lote, acompanhamento físico e preenchimento do Relatório de Execução Simplificado.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Documento do Sistema</h5>
+              <p>Relatório de Execução Simplificado e Atestado de Objeto Cumprido.</p>
+            </div>
+            <div class="meta-box">
+              <h5>Foco do Controle</h5>
+              <p>Comprovação física dos resultados entregues.</p>
+            </div>
+          </div>
+          <div class="detail-case-box">
+            <h5>Ilustração do Caso FNMA</h5>
+            <p>O município cadastra as ações finalizadas. No Propatinhas, os dados são sincronizados através da API externa do Simpatinhas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 5: Parametrização por Política (Playground) -->
+  <section id="mod5">
+    <span class="section-tag">Módulo 5</span>
+    <h2 class="section-title">Playground de Parametrização</h2>
+    <p class="section-subtitle">Simule regras em tempo real para entender como o motor do TRANSFEREGOV configura as parcerias.</p>
+    
+    <div class="playground-container">
+      <!-- Input Panel -->
+      <div class="glass-panel control-panel">
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--secondary);">Configurar Variáveis</h3>
+        
+        <!-- Selection 1 -->
+        <div class="control-group">
+          <label>Programa Exemplar (FNMA)</label>
+          <div class="option-cards">
+            <div class="option-card active" id="prog-propatinhas">Propatinhas (Manejo)</div>
+            <div class="option-card" id="prog-prevfogo">Prévfogo (Incêndios)</div>
+          </div>
+        </div>
+
+        <!-- Selection 2 -->
+        <div class="control-group">
+          <label>Índice de Desenvolvimento Humano (IDH)</label>
+          <div class="option-cards">
+            <div class="option-card" id="idh-alto">Alto IDH</div>
+            <div class="option-card active" id="idh-baixo">Baixo IDH</div>
+          </div>
+        </div>
+
+        <!-- Selection 3 -->
+        <div class="control-group">
+          <label>Região do Município</label>
+          <div class="option-cards">
+            <div class="option-card" id="reg-amazonia">Amazônia Legal</div>
+            <div class="option-card active" id="reg-outras">Demais Regiões</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Output Screen -->
+      <div class="monitor-screen">
+        <div class="screen-header">
+          <div class="screen-title">
+            <div class="status-dot"></div>
+            Motor de Regras TRANSFEREGOV
+          </div>
+          <span style="font-family: monospace; color: var(--text-muted); font-size: 0.8rem;">SIMULADOR V2.0</span>
+        </div>
+
+        <div class="screen-results">
+          <div class="result-row">
+            <span class="result-label">Contrapartida Exigida:</span>
+            <span class="result-value" id="res-contrapartida">0% (Isento)</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Integração Sistêmica:</span>
+            <span class="result-value" id="res-integracao">API Simpatinhas</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Requisito Específico:</span>
+            <span class="result-value" id="res-planos">Adesão Nacional</span>
+          </div>
+          <div class="result-row">
+            <span class="result-label">Cláusula Suspensiva:</span>
+            <span class="result-value" id="res-clausula">Não aplicável</span>
+          </div>
+        </div>
+
+        <!-- ASCII Dynamic Flow Diagram -->
+        <div class="visual-flow-mock">
+          <span style="color: var(--primary); font-weight: bold;">Fluxograma de Conexões Sistêmicas:</span>
+          <div id="visual-flow-code" style="margin-top: 0.5rem; line-height: 1.3;">
+[API Externa: Simpatinhas]
+         │ (Dados de castração físico)
+         ▼
+[TRANSFEREGOV: Metas Padronizadas]
+         │ (Gera contrapartida automática)
+         ▼
+[Validação Final do Concedente] ──> [Relatório Simplificado]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 6: Papéis e Responsabilidades -->
+  <section id="mod6">
+    <span class="section-tag">Módulo 6</span>
+    <h2 class="section-title">Papéis e Responsabilidades</h2>
+    <p class="section-subtitle">Conheça os limites de atuação e as permissões de cada ator interfederativo no sistema.</p>
+    
+    <div class="roles-grid">
+      <!-- Left selector -->
+      <div class="roles-menu">
+        <div class="role-btn active" data-role="concedente">
+          <h4>Concedente</h4>
+          <span>Órgão repassador ([ÓRGÃO])</span>
+        </div>
+        <div class="role-btn" data-role="proponente">
+          <h4>Proponente</h4>
+          <span>Ente executor (Estado / Município)</span>
+        </div>
+        <div class="role-btn" data-role="tecnico">
+          <h4>Técnico Finalístico</h4>
+          <span>Fiscalizador de campo</span>
+        </div>
+        <div class="role-btn" data-role="ordenador">
+          <h4>Ordenador de Despesas</h4>
+          <span>Homologador de pagamentos</span>
+        </div>
+      </div>
+
+      <!-- Right details window -->
+      <div class="role-display">
+        
+        <!-- Concedente -->
+        <div class="role-view active" id="role-concedente">
+          <h3>Concedente</h3>
+          <p class="subtitle">Representante das diretrizes de políticas públicas da União</p>
+          <div class="role-info-section">
+            <div class="role-box">
+              <h5>Função Principal</h5>
+              <p>Estruturar chamamentos públicos na Esteira de Parcerias, avaliar conformidade orçamentária e jurídica e liberar empenhos financeiros.</p>
+            </div>
+            <div class="role-box perm-box">
+              <h5>Ações Sistêmicas Permitidas</h5>
+              <p>Cadastrar editais, parametrizar regras de IDH e contrapartida, homologar a Cláusula Suspensiva, aprovar prestações de contas.</p>
+            </div>
+            <div class="role-box case-box">
+              <h5>Papel no Caso FNMA</h5>
+              <p>A equipe gestora do FNMA lotada no [ÓRGÃO] atua como concedente na parametrização dos repasses simplificados municipais.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proponente -->
+        <div class="role-view" id="role-proponente">
+          <h3>Proponente</h3>
+          <p class="subtitle">Ente federativo executor das metas pactuadas</p>
+          <div class="role-info-section">
+            <div class="role-box">
+              <h5>Função Principal</h5>
+              <p>Manifestar interesse nos editais do TRANSFEREGOV, planejar a execução do objeto e prestar contas dos resultados físicos alcançados.</p>
+            </div>
+            <div class="role-box perm-box">
+              <h5>Ações Sistêmicas Permitidas</h5>
+              <p>Cadastrar manifestação de interesse, selecionar metas padronizadas do edital, vincular dados bancários de compras e emitir relatórios de execução.</p>
+            </div>
+            <div class="role-box case-box">
+              <h5>Papel no Caso FNMA</h5>
+              <p>Prefeituras e secretarias municipais do Meio Ambiente que aderem às campanhas do Propatinhas ou combate a queimadas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tecnico -->
+        <div class="role-view" id="role-tecnico">
+          <h3>Técnico Finalístico</h3>
+          <p class="subtitle">Acompanhamento e aferição de resultados em campo</p>
+          <div class="role-info-section">
+            <div class="role-box">
+              <h5>Função Principal</h5>
+              <p>Realizar vistorias físicas in loco ou monitoramento sistêmico de parcerias ativas para atestar o andamento da política.</p>
+            </div>
+            <div class="role-box perm-box">
+              <h5>Ações Sistêmicas Permitidas</h5>
+              <p>Inserir laudos de vistoria de campo, anexar fotografias, registrar pareceres de conformidade de metas físicas no sistema.</p>
+            </div>
+            <div class="role-box case-box">
+              <h5>Papel no Caso FNMA</h5>
+              <p>Fiscais ambientais do [ÓRGÃO] que vistoriam as clínicas de castração associadas ou validam a implantação de brigadas de incêndio.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ordenador -->
+        <div class="role-view" id="role-ordenador">
+          <h3>Ordenador de Despesas</h3>
+          <p class="subtitle">Responsável financeiro e orçamentário</p>
+          <div class="role-info-section">
+            <div class="role-box">
+              <h5>Função Principal</h5>
+              <p>Garantir a conformidade fiscal do empenho e da liberação financeira de acordo com a base orçamentária do ministério.</p>
+            </div>
+            <div class="role-box perm-box">
+              <h5>Ações Sistêmicas Permitidas</h5>
+              <p>Simular fluxo de empenho e testes no Ambiente de Treinamento e autorizar a liquidação financeira no Ambiente de Produção.</p>
+            </div>
+            <div class="role-box case-box">
+              <h5>Papel no Caso FNMA</h5>
+              <p>Autoridades de gestão financeira do departamento de fundos do [ÓRGÃO] encarregadas do repasse orçamentário final.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 7: FAQ e Boas Práticas (Sintoma do Convênio) -->
+  <section id="mod7">
+    <span class="section-tag">Módulo 7</span>
+    <h2 class="section-title">Dúvidas Frequentes & Erros Comuns</h2>
+    <p class="section-subtitle">Esclareça suas incertezas conceituais e saiba como evitar a burocracia desnecessária nas transferências.</p>
+    
+    <div class="faq-erros-container">
+      
+      <!-- FAQ list -->
+      <div class="faq-list">
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>A transferência simplificada exige convênio?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <strong>Não é convênio tradicional.</strong> O repasse se estabelece através de termo de adesão eletrônica e portaria específica de fomento, eliminando termos complexos e reduzindo o tempo de contratação.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>É necessário criar um plano de trabalho do zero?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              <strong>Não.</strong> O proponente apenas seleciona as metas padronizadas e pré-configuradas disponibilizadas pelo concedente no edital, simplificando a elaboração e a análise.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Como deve ser realizada a prestação de contas?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Ela é realizada através do <strong>Relatório de Execução Simplificado</strong>, que exige apenas comprovações físicas e atestado de cumprimento da meta final pactuada, sem auditoria analítica redundante de cada nota fiscal.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>Qual instrumento legal inicia a parceria interfederativa?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Utiliza-se o <strong>ACT (Acordo de Cooperação Técnica)</strong>, assinado pelas partes de forma digital, que valida os deveres recíprocos de cooperação sem envolver o trâmite analítico clássico de repasses.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span>As regras do defeso eleitoral travam todos os repasses?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              As transferências voluntárias comuns são vedadas. Contudo, <strong>casos emergenciais amparados por portarias de exceção</strong> (como ações de combate a queimadas do Prévfogo) seguem liberados normalmente.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Erros comuns e Sintoma do Convenio -->
+      <div class="erros-sidebar">
+        
+        <!-- Alarm card -->
+        <div class="sintoma-alerta">
+          <div class="sintoma-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <h4>O "Sintoma do Convênio"</h4>
+          </div>
+          <p>
+            O maior risco técnico-cultural do processo de migração. Ocorre quando analistas ou gestores finalísticos exigem relatórios analíticos, vistorias exaustivas e documentos fiscais clássicos de convênios em parcerias parametrizadas como <strong>Transferências Simplificadas</strong>. Essa re-burocratização manual paralisa e anula toda a velocidade regulada por lei.
+          </p>
+        </div>
+
+        <!-- Evite vs Faça list -->
+        <div class="evite-faca-grid">
+          <div class="evite-box">
+            <h5>Evite (❌)</h5>
+            <ul class="evite-faca-list">
+              <li>Exigir certidões orçamentárias detalhadas redundantes em repasses diretos.</li>
+              <li>Atrasar a proposição das metas para o fim do ano fiscal (outubro/novembro).</li>
+              <li>Executar ações diretamente em Produção sem testes no Ambiente de Treinamento.</li>
+            </ul>
+          </div>
+          <div class="faca-box">
+            <h5>Faça (✅)</h5>
+            <ul class="evite-faca-list">
+              <li>Utilizar o Ambiente de Treinamento para treinar o envio de empenho e pagamentos.</li>
+              <li>Adotar Metas Padronizadas pré-configuradas para municípios.</li>
+              <li>Envolver equipes técnicas finalísticas logo nas fases de reuniões semanais.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Módulo 8: Glossário e Encerramento -->
+  <section id="mod8">
+    <span class="section-tag">Módulo 8</span>
+    <h2 class="section-title">Glossário Visual</h2>
+    <p class="section-subtitle">Consulte rapidamente a definição unificada dos termos essenciais estudados nesta capacitação.</p>
+    
+    <div class="glossary-grid">
+      <div class="glossary-card">
+        <h4>TRANSFEREGOV</h4>
+        <p>Plataforma digital unificada responsável pela gestão e controle dos repasses e parcerias da União.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>SIORG</h4>
+        <p>Sistema de Informações Organizacionais integrado para mapeamento e cadastro de unidades decisórias.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>Transferência Simplificada</h4>
+        <p>Modelo de repasse financeiro célere baseado em adesão eletrônica e monitoramento do objeto físico.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>Cláusula Suspensiva</h4>
+        <p>Trava contratual sistêmica de até 1 ano para entrega de planos ambientais ou licenças pendentes.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>ACT</h4>
+        <p>Acordo de Cooperação Técnica sem repasse financeiro, utilizado na fase de articulação inicial.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>Defeso Eleitoral</h4>
+        <p>Período de bloqueio legal a repasses federais voluntários comuns que antecede o pleito eleitoral.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>Metas Padronizadas</h4>
+        <p>Modelos estruturados pré-aprovados de planos de trabalho que simplificam a adesão de municípios.</p>
+      </div>
+      <div class="glossary-card">
+        <h4>Relatório de Execução</h4>
+        <p>Documento digital enxuto para comprovação final com foco estrito na entrega física do projeto.</p>
+      </div>
+    </div>
+
+    <!-- Final Call to Action -->
+    <div class="cta-footer">
+      <h2>Conclua seu Treinamento Conceitual</h2>
+      <p>
+        Você finalizou toda a base conceitual sobre as Transferências Simplificadas. 
+        Agora, acesse o ambiente de laboratório para simular propostas de fomento ambiental sem riscos fiscais.
+      </p>
+      <div class="hero-actions">
+        <a href="https://www.gov.br/transferegov" target="_blank" class="btn-primary">
+          Acesse o Ambiente de Treinamento
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="referencias/mapa_mental.txt" target="_blank" class="btn-secondary">Baixar Mapa Mental (txt)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="nav-container" style="justify-content: center; flex-direction: column; gap: 0.5rem;">
+      <p>Material de Treinamento Oficial — TRANSFEREGOV & Esteira de Parcerias no âmbito do [ÓRGÃO]</p>
+      <p style="color: var(--text-muted); font-size: 0.75rem;">© 2026 [ÓRGÃO] / MGI. Todos os direitos reservados. Referências ao caso FNMA de cunho exemplificativo e didático.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

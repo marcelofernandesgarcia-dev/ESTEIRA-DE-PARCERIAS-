@@ -1,0 +1,15 @@
+=== mod1_abertura.txt ===
+Módulo 1 — Abertura e Contexto
+
+Headline: Domine o TRANSFEREGOV: da conceituação à execução
+
+Propósito do Treinamento:
+Esta landing page é um material de treinamento oficial estruturado para o nivelamento conceitual e a capacitação de futuros parceiros (Estados e Municípios). O objetivo é capacitar gestores e equipes operacionais no processo de internalização de Transferências Simplificadas, agilizando repasses e entregando valor na ponta final da política pública.
+
+Público-alvo / Quem deve fazer este percurso:
+- Servidores públicos estaduais e municipais responsáveis pela captação de recursos federais.
+- Técnicos finalísticos e gestores do [ÓRGÃO] que supervisionam e analisam propostas.
+- Ordenadores de despesas encarregados do planejamento financeiro e orçamentário.
+
+Diferencial Pedagógico:
+Este treinamento foi desenhado como uma trilha de aprendizagem sequencial e interativa. Recomendamos que você percorra a página de forma progressiva: cada módulo constrói a base de conhecimento necessária para que você domine o módulo seguinte, facilitando a memorização e a aplicação prática do sistema.

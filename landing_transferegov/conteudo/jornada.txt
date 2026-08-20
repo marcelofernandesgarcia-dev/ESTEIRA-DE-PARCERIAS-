@@ -1,0 +1,20 @@
+=== jornada.txt ===
+Etapa 1: Convocatória / Programa
+- Frase: O [ÓRGÃO] cadastra o chamamento e define as regras, metas padronizadas e prazos no TRANSFEREGOV.
+- Ícone sugerido: Megafone ou Alto-falante (ex: "megaphone" ou "announcement")
+
+Etapa 2: Manifestação de Interesse
+- Frase: O Ente Federado adere digitalmente ao programa, enviando os documentos iniciais e selecionando as metas.
+- Ícone sugerido: Documento com checkmark (ex: "assignment-turned-in" ou "assignment")
+
+Etapa 3: Validação Técnica
+- Frase: O [ÓRGÃO] analisa a conformidade documental e as metas do plano de trabalho diretamente no sistema.
+- Ícone sugerido: Marca de verificação / Joinha (ex: "thumb-up" ou "verified-user")
+
+Etapa 4: Desembolso
+- Frase: O sistema abre automaticamente a conta bancária vinculada e emite a ordem de pagamento para o ente.
+- Ícone sugerido: Moedas / Conta bancária automatizada (ex: "account-balance" ou "currency-dollar")
+
+Etapa 5: Execução e Relatório
+- Frase: O Ente Federado executa as metas e alimenta o Relatório de Execução Simplificado (integrado ao Simpatinhas ou sistema).
+- Ícone sugerido: Relatório com gráfico de barras (ex: "document-chart" ou "insert-chart-outlined")

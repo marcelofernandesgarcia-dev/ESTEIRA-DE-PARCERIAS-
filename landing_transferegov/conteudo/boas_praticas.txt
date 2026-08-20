@@ -1,0 +1,13 @@
+=== boas_praticas.txt ===
+Alerta Principal: "Sintoma do Convênio"
+> [!IMPORTANT]
+> O "Sintoma do Convênio" é a re-burocratização de um modelo ágil. Ele ocorre quando as equipes finalísticas tentam aplicar exigências documentais e controles de processos clássicos às Transferências Simplificadas, ignorando que a lei foca estritamente nos resultados e metas físicas.
+
+Tabela de Boas Práticas:
+
+| Evite | Faça |
+| :--- | :--- |
+| Deixar a transição orçamentária para o último trimestre (outubro/novembro), sob risco de perda dos recursos. | Utilizar intensivamente o Ambiente de Treinamento como laboratório seguro para simular empenhos e errar sem riscos fiscais. |
+| Exigir certidões e relatórios analíticos redundantes que descaracterizam a celeridade da Transferência Simplificada. | Adotar Metas Padronizadas pré-definidas no TRANSFEREGOV para agilizar as propostas de estados e municípios. |
+| Planejar a execução orçamentária do Prévfogo sem considerar restrições de defeso. | Utilizar a Portaria de Emergência como amparo legal para mitigar as restrições eleitorais nas ações do Prévfogo. |
+| Executar ações diretamente em Produção sem antes simular a jornada no ambiente laboratorial. | Envolver as equipes finalísticas logo nas fases iniciais e reuniões semanais para consolidar a transição cultural. |

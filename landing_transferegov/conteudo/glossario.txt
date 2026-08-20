@@ -1,0 +1,9 @@
+=== glossario.txt ===
+1. TRANSFEREGOV: Plataforma tecnológica unificada para gestão, operacionalização e controle das transferências e parcerias da União.
+2. SIORG/CORG: Códigos de estrutura organizacional que definem quem é o órgão responsável pelo recurso no sistema.
+3. Transferência Simplificada: Modelo de repasse direto, célere e sem instrumento de convênio, focado em entes federados e com foco nos resultados.
+4. Cláusula Suspensiva: Condição sistêmica que trava etapas futuras da parceria por até 1 ano até a entrega de pendências estruturais.
+5. ACT (Acordo de Cooperação Técnica): Instrumento de cooperação interinstitucional sem transferência de recursos financeiros federais.
+6. Defeso Eleitoral: Restrição legal que proíbe repasses voluntários da União, mitigado por Portaria de Emergência no caso de combate a incêndios.
+7. Metas Padronizadas: Itens de entrega pré-configurados pelo [ÓRGÃO] para facilitar a manifestação de interesse dos entes parceiros.
+8. Relatório de Execução Simplificado: Documento enxuto alimentado por sistemas parceiros para comprovar a entrega física das metas pactuadas.
