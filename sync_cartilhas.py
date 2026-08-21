@@ -93,7 +93,7 @@ def add_callout(doc, text_p_list, color_hex="2670E8", bg_hex="F0F6FF"):
 chapters_data = {
     "title": "CARTILHA DE NIVELAMENTO",
     "subtitle": "Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR\nGuia Prático para Órgãos Concedentes Federais, Estados, Municípios e OSCs",
-    "meta_info": "Versão: 2.3.0 (Edição Atualizada)\nPúblico: Concedentes, Estados, Municípios e OSCs",
+    "meta_info": "Público: Concedentes, Estados, Municípios e OSCs",
     "expediente": [
         "Coordenação Geral: Diretoria de Parcerias e Transferências - DTPAR/SEGES/MGI",
         "Parceiros Institucionais: Estados, Municípios e Organizações da Sociedade Civil (OSCs)"
@@ -929,8 +929,7 @@ def generate_html_files():
       <h1 class="cover-title">Cartilha de Nivelamento</h1>
       <p class="cover-subtitle">Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR</p>
       <div class="cover-meta">
-        <span><strong>Versão:</strong> 2.3.0 (Edição Atualizada)</span>
-        <span><strong>MGI / SEGES</strong> — 2026</span>
+        <span><strong>DTPAR/SEGES/MGI</strong> — 2026</span>
       </div>
     </header>
 
