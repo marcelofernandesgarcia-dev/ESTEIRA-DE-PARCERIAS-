@@ -15,11 +15,11 @@
       --accent: #10b981;
       --accent-danger: #ef4444;
       --accent-warn: #f59e0b;
-      --bg-dark: #0f172a;
-      --bg-card: #f8fafc;
-      --text-main: #1e293b;
-      --text-muted: #64748b;
-      --border: #e2e8f0;
+      --bg-dark: #0b111e;
+      --bg-card: rgba(255, 255, 255, 0.02);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.1);
       --font-main: 'Inter', system-ui, -apple-system, sans-serif;
     }
 
@@ -32,7 +32,7 @@
     body {
       font-family: var(--font-main);
       color: var(--text-main);
-      background-color: #f1f5f9;
+      background-color: #0b111e;
       line-height: 1.6;
       font-size: 10.5pt;
     }
@@ -41,10 +41,11 @@
       max-width: 210mm;
       min-height: 297mm;
       margin: 20px auto;
-      background: #ffffff;
+      background: #0f172a;
       padding: 22mm 20mm;
       border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border);
       position: relative;
     }
 
@@ -86,6 +87,7 @@
       border-radius: 12px;
       margin-bottom: 30px;
       border-left: 6px solid var(--secondary);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .cover-badge {
@@ -128,7 +130,7 @@
     h2.section-heading {
       font-size: 1.25rem;
       font-weight: 700;
-      color: var(--bg-dark);
+      color: #ffffff;
       border-bottom: 2px solid var(--border);
       padding-bottom: 6px;
       margin-top: 25px;
@@ -141,7 +143,7 @@
     h3.sub-heading {
       font-size: 1.05rem;
       font-weight: 600;
-      color: var(--primary-dark);
+      color: var(--secondary);
       margin-top: 16px;
       margin-bottom: 8px;
     }
@@ -149,7 +151,7 @@
     p {
       margin-bottom: 12px;
       text-align: justify;
-      color: #334155;
+      color: #cbd5e1;
     }
 
     .grid-2 {
@@ -175,7 +177,7 @@
 
     .card h4 {
       font-size: 0.95rem;
-      color: var(--bg-dark);
+      color: #ffffff;
       margin-bottom: 6px;
       font-weight: 700;
     }
@@ -203,10 +205,10 @@
       gap: 6px;
     }
 
-    .callout-info { border-color: var(--primary); background: #f0f9ff; color: #0369a1; }
-    .callout-warn { border-color: var(--accent-warn); background: #fffbeb; color: #b45309; }
-    .callout-danger { border-color: var(--accent-danger); background: #fef2f2; color: #991b1b; }
-    .callout-success { border-color: var(--accent); background: #f0fdf4; color: #15803d; }
+    .callout-info { border-color: var(--secondary); background: rgba(14, 165, 233, 0.05); color: #e0f2fe; }
+    .callout-warn { border-color: var(--accent-warn); background: rgba(245, 158, 11, 0.05); color: #fef3c7; }
+    .callout-danger { border-color: var(--accent-danger); background: rgba(239, 68, 68, 0.05); color: #fee2e2; }
+    .callout-success { border-color: var(--accent); background: rgba(16, 185, 129, 0.05); color: #dcfce7; }
 
     table.data-table {
       width: 100%;
@@ -223,13 +225,13 @@
     }
 
     table.data-table th {
-      background: #f8fafc;
+      background: rgba(255, 255, 255, 0.03);
       font-weight: 700;
-      color: var(--bg-dark);
+      color: #ffffff;
     }
 
     table.data-table tr:nth-child(even) td {
-      background: #fbfcfe;
+      background: rgba(255, 255, 255, 0.01);
     }
 
     .badge {
@@ -241,9 +243,9 @@
       text-transform: uppercase;
     }
 
-    .badge-primary { background: #e0f2fe; color: var(--primary-dark); }
-    .badge-success { background: #dcfce7; color: #166534; }
-    .badge-danger { background: #fee2e2; color: #991b1b; }
+    .badge-primary { background: rgba(14, 165, 233, 0.2); color: var(--secondary); }
+    .badge-success { background: rgba(16, 185, 129, 0.2); color: var(--accent); }
+    .badge-danger { background: rgba(239, 68, 68, 0.2); color: var(--accent-danger); }
 
     @media print {
       body {
@@ -262,13 +264,69 @@
         max-width: 100%;
         box-shadow: none;
         border-radius: 0;
+        border: none;
+        background: none;
       }
 
       .cover-page {
-        background: #0f172a !important;
-        color: #fff !important;
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        border: 1px solid #e2e8f0;
+        border-left: 6px solid var(--primary) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+      }
+
+      .cover-title {
+        color: #0f172a !important;
+      }
+
+      .cover-subtitle {
+        color: #475569 !important;
+      }
+
+      h2.section-heading {
+        color: #0f172a !important;
+        border-bottom: 2px solid #e2e8f0 !important;
+      }
+
+      h3.sub-heading {
+        color: #0369a1 !important;
+      }
+
+      p {
+        color: #334155 !important;
+      }
+
+      .card {
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+
+      .card h4 {
+        color: #0f172a !important;
+      }
+
+      .card p {
+        color: #475569 !important;
+      }
+
+      .callout-info { border-color: #0284c7 !important; background: #f0f9ff !important; color: #0369a1 !important; }
+      .callout-warn { border-color: #f59e0b !important; background: #fffbeb !important; color: #b45309 !important; }
+      .callout-danger { border-color: #ef4444 !important; background: #fef2f2 !important; color: #991b1b !important; }
+      .callout-success { border-color: #10b981 !important; background: #f0fdf4 !important; color: #15803d !important; }
+
+      table.data-table th {
+        background: #f1f5f9 !important;
+        color: #0f172a !important;
+      }
+
+      table.data-table td {
+        color: #334155 !important;
+      }
+
+      table.data-table tr:nth-child(even) td {
+        background: #f8fafc !important;
       }
 
       .page-break {
@@ -288,7 +346,7 @@
 </head>
 <body>
 
-  <!-- Barra de Ações Rápidas (Oculta na Impressão) -->
+  <!-- Barra de Ações Rápidas -->
   <div class="action-bar">
     <button onclick="window.print()" class="btn-action">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
@@ -301,7 +359,7 @@
     <!-- CAPA DA CARTILHA -->
     <header class="cover-page">
       <span class="cover-badge">Guia Oficial de Capacitação</span>
-      <h1 class="cover-title">Cartilha de Nivelamento Técnico</h1>
+      <h1 class="cover-title">Cartilha de Nivelamento</h1>
       <p class="cover-subtitle">Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR</p>
       <div class="cover-meta">
         <span><strong>Versão:</strong> 2.3.0 (Edição Atualizada)</span>
@@ -311,74 +369,74 @@
 
     <!-- 1. SUMÁRIO EXECUTIVO -->
     <section>
-      <h2 class="section-heading">1. Sumário Executivo</h2>
-      <p>A modernização dos repasses de recursos no âmbito federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV</strong>. Esta mudança é uma resposta direta à necessidade de conferir celeridade e eficiência à execução de políticas públicas críticas e otimizar as parcerias interfederativas.</p>
+      <h2 class="section-heading">⚡ 1. Sumário Executivo</h2>
+      <p>A modernização dos repasses de recursos no âmbito federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV.BR</strong>. Esta mudança é uma resposta direta à necessidade de conferir celeridade e eficiência à execução de políticas públicas críticas de fomento e parcerias, otimizando o relacionamento interfederativo.</p>
       
       <div class="callout callout-info">
-        <div class="callout-title">Principais Conclusões:</div>
-        <p>• <strong>Ruptura de Paradigma:</strong> Dispensa convênios ou instrumentos complexos ex-ante.</p>
-        <p>• <strong>Padronização Técnica:</strong> Utiliza metas pré-configuradas no sistema do Módulo de Gestão de Parcerias.</p>
-        <p>• <strong>Solução de Estrutura Organizacional:</strong> Uso do SIORG <strong>267384</strong> (Depto. de Gestão de Fundos) para mapeamento administrativo.</p>
-        <p>• <strong>Gestão de Riscos Diferenciada:</strong> Regras de exceção (como defeso eleitoral) parametrizadas por política pública.</p>
-        <p>• <strong>Rastreabilidade Financeira:</strong> Integração com SIAFI para abertura automática de contas bancárias.</p>
+        <div class="callout-title">⚡ Principais Conclusões:</div>
+        <p>• <strong>Ruptura de Paradigma:</strong> Dispensa convênios ou instrumentos complexos ex-ante, focando no objeto físico.</p>
+        <p>• <strong>Padronização Técnica:</strong> Utiliza metas físicas pré-configuradas no Módulo de Gestão de Parcerias.</p>
+        <p>• <strong>Mapeamento Estrutural:</strong> Uso de SIORG setorial (ex: Departamento Gestor - 267384) para controle administrativo.</p>
+        <p>• <strong>Gestão de Riscos Eficiente:</strong> Regras de exceção (como o defeso eleitoral) parametrizadas por tipo de programa no sistema.</p>
+        <p>• <strong>Rastreabilidade Financeira:</strong> Integração nativa com SIAFI para abertura de contas e conciliação em tempo real.</p>
       </div>
     </section>
 
     <!-- 2. CONTEXTO INSTITUCIONAL -->
     <section class="no-break">
-      <h2 class="section-heading">2. Contexto Institucional e Base Normativa</h2>
-      <p>A implementação desta nova modalidade é sustentada pelo <strong>Acordo de Cooperação Técnica (ACT)</strong> firmado entre o MGI e os órgãos federais parceiros. Este acordo formaliza o suporte do órgão central para a internalização de políticas finalísticas no ecossistema digital de transferências da União.</p>
+      <h2 class="section-heading">🏛️ 2. Contexto Institucional e Base Normativa</h2>
+      <p>A implementação desta nova modalidade é sustentada por Acordos de Cooperação Técnica (ACT) firmados entre o Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e os órgãos federais parceiros. Este acordo formaliza o suporte técnico para a internalização de políticas finalísticas no ecossistema de transferências da União, substituindo a análise documental analítica por uma sistemática de adesão rápida.</p>
       
       <div class="grid-2">
         <div class="card">
           <h4>Papel do MGI</h4>
-          <p>Gestor central da Plataforma TRANSFEREGOV, provedor da infraestrutura técnica e do marco regulatório. Assegura conformidade legal e governança sistêmica.</p>
+          <p>Gestor central da Plataforma TRANSFEREGOV.BR, responsável por fornecer a infraestrutura sistêmica e garantir o marco regulatório e governança.</p>
         </div>
         <div class="card">
           <h4>Papel dos Órgãos Parceiros</h4>
-          <p>Autonomia total na gestão dos recursos de seus fundos, na definição das regras de negócio de suas políticas finalísticas e homologação de metas.</p>
+          <p>Detêm total autonomia na gestão dos recursos de seus fundos, na definição das regras de negócio de suas chamadas públicas e na validação das metas físicas pactuadas.</p>
         </div>
       </div>
     </section>
 
     <!-- 3. ARQUITETURA TÉCNICA -->
     <section class="no-break">
-      <h2 class="section-heading">3. Arquitetura Técnica do TRANSFEREGOV</h2>
-      <p>A robustez sistêmica do TRANSFEREGOV assegura a integridade dos recursos. A arquitetura de desenvolvimento e execução é subdividida em três ambientes bem definidos:</p>
+      <h2 class="section-heading">⚙️ 3. Arquitetura Técnica do TRANSFEREGOV.BR</h2>
+      <p>A robustez do TRANSFEREGOV.BR garante a integridade dos recursos federais. A arquitetura sistêmica é subdividida em três ambientes principais:</p>
       
       <div class="grid-3">
         <div class="card">
           <span class="badge badge-primary">1. Treinamento</span>
-          <p>Simulação e sandbox para capacitação de técnicos locais sem risco fiscal ou transações reais.</p>
+          <p>Simulador (sandbox) isolado destinado ao aprendizado das equipes técnicas, sem impacto orçamentário real.</p>
         </div>
         <div class="card">
           <span class="badge badge-primary">2. Homologação</span>
-          <p>Testes de integração bancária via API e validações finais de layouts antes da implantação.</p>
+          <p>Validações finais de layouts, parametrizações e testes de integração de APIs com agentes bancários.</p>
         </div>
         <div class="card">
           <span class="badge badge-danger">3. Produção</span>
-          <p>Execução oficial e jurídica. Repasses efetivos, empenhos e monitoramento de metas.</p>
+          <p>Execução oficial das parcerias, com empenho no SIAFI, transações financeiras reais e monitoramento legal.</p>
         </div>
       </div>
       
       <div class="callout callout-info" style="margin-top:10px;">
-        <strong>Solução Técnica SIORG:</strong> Para contornar eventuais ausências de um código de Unidade Gestora próprio, a arquitetura utiliza o SIORG do <strong>Departamento de Gestão de Fundos e de Recursos Externos (267384)</strong>.
+        <strong>Solução Técnica SIORG:</strong> Para viabilizar a vinculação administrativa de conselhos ou fundos finalísticos sem código de Unidade Gestora própria, a plataforma utiliza a vinculação via código de SIORG (ex: código do Departamento Gestor de Recursos - 267384) e perfis específicos para servidores.
       </div>
     </section>
 
     <!-- 4. PARAMETRIZAÇÃO -->
     <section class="no-break">
-      <h2 class="section-heading">4. Parametrização por Política Pública</h2>
-      <p>O Módulo de Gestão de Parcerias do TRANSFEREGOV adapta-se às particularidades das diversas políticas públicas por meio de parametrização no sistema:</p>
+      <h2 class="section-heading">🔧 4. Parametrização por Política Pública</h2>
+      <p>O Módulo de Gestão de Parcerias do TRANSFEREGOV.BR se adapta às particularidades de diferentes políticas públicas por meio de configurações no sistema:</p>
       
       <div class="card" style="margin-bottom:10px;">
-        <strong>1. Requisitos de Habilitação:</strong> Configuração automatizada de critérios fiscais, jurídicos e técnicos que os entes devem cumprir eletronicamente.
+        <strong>1. Requisitos de Habilitação:</strong> Definição automatizada de critérios técnicos e fiscais que os proponentes devem cumprir eletronicamente.
       </div>
       <div class="card" style="margin-bottom:10px;">
-        <strong>2. Anexos e Documentos Customizados:</strong> Possibilidade de limitar a adesão apenas a proponentes que anexarem planos setoriais específicos (ex: planos de contingência, declarações clínicas).
+        <strong>2. Anexos Obrigatórios:</strong> Possibilidade de restringir a adesão à inserção de planos setoriais específicos de trabalho (ex: planos de contingência, declarações locais).
       </div>
       <div class="card">
-        <strong>3. Metas Padronizadas:</strong> Conjunto de objetivos de entrega física e quantificável pré-configurados para a rápida adesão dos estados e municípios.
+        <strong>3. Metas Padronizadas:</strong> Catálogo de entregas físicas predefinidas para a rápida adesão dos estados e municípios, eliminando propostas subjetivas.
       </div>
     </section>
 
@@ -386,37 +444,37 @@
 
     <!-- 5. OPP -->
     <section>
-      <h2 class="section-heading">5. Ordem de Pagamento de Parcerias (OPP)</h2>
-      <p>A Ordem de Pagamento de Parcerias (OPP) representa a automação definitiva do ciclo de execução financeira no Módulo de Gestão de Parcerias do TRANSFEREGOV. Ela desburocratiza e assegura o fluxo de recursos públicos federais:</p>
+      <h2 class="section-heading">💳 5. Ordem de Pagamento de Parcerias (OPP)</h2>
+      <p>A OPP é o instrumento financeiro definitivo de automatização bancária das parcerias. Ela assegura e agiliza a liberação dos recursos federais:</p>
       
       <div class="grid-2">
         <div class="card">
           <h4>⚡ Tempo Real via API</h4>
-          <p>Integração nativa com BB, Caixa e BNB, eliminando o processamento em lote (batch).</p>
+          <p>Conexão direta com bancos públicos oficiais, eliminando o processamento em lote (batch).</p>
         </div>
         <div class="card">
           <h4>🛡️ Dupla Assinatura</h4>
-          <p>Assinatura eletrônica em dupla autenticação (Operador/Gestor) via Gov.br Ouro.</p>
+          <p>Exigência de dupla autorização eletrônica (Operador e Gestor) com certificação Gov.br Ouro.</p>
         </div>
         <div class="card">
           <h4>📱 Pix e QR Code</h4>
-          <p>Quitação direta de fornecedores locais na ponta sem saques intermediários.</p>
+          <p>Pagamento direto a fornecedores e prestadores na ponta, garantindo conciliação imediata.</p>
         </div>
         <div class="card">
           <h4>⚙️ Controle Ativo</h4>
-          <p>Bloqueio e desbloqueio remoto de contas bancárias pelo órgão concedente.</p>
+          <p>Prerrogativa do órgão federal de comandar o bloqueio e devolução de saldos não utilizados.</p>
         </div>
       </div>
       
       <div class="callout callout-warn" style="margin-top:15px;">
-        <strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API bancária em 3 a 5 segundos; Janela de operação das 07h às 19h30; transações via Pix sem teto de valor. A migração das contas ativas deve ocorrer até dezembro de 2026.
+        <strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.
       </div>
     </section>
 
     <!-- 6. JORNADA -->
     <section class="no-break">
-      <h2 class="section-heading">6. Jornada da Transferência</h2>
-      <p>O fluxo lógico simplificado é estruturado em etapas claras que substituem a burocracia documental tradicional por validações diretas:</p>
+      <h2 class="section-heading">🗺️ 6. Jornada da Transferência</h2>
+      <p>A jornada de repasses simplificados substitui os planos de trabalho densos por um fluxo lógico em 5 etapas no sistema:</p>
       
       <table class="data-table">
         <thead>
@@ -430,27 +488,27 @@
           <tr>
             <td><strong>01</strong></td>
             <td>Convocatória</td>
-            <td>Cadastro das regras e metas no sistema pelo órgão concedente.</td>
+            <td>O órgão concedente cadastra a chamada pública, metas físicas padronizadas e prazos no sistema.</td>
           </tr>
           <tr>
             <td><strong>02</strong></td>
             <td>Manifestação de Interesse</td>
-            <td>Adesão digital rápida e sem burocracia pelo ente parceiro.</td>
+            <td>O ente subnacional adere digitalmente à chamada, preenchendo as informações e anexando os documentos.</td>
           </tr>
           <tr>
             <td><strong>03</strong></td>
             <td>Validação Técnica</td>
-            <td>Avaliação expedita e verificação dos critérios automatizados.</td>
+            <td>O concedente realiza a análise da habilitação eletrônica e emite o parecer de aprovação.</td>
           </tr>
           <tr>
             <td><strong>04</strong></td>
             <td>Empenho e Desembolso</td>
-            <td>Abertura automática de conta e execução via SIAFI.</td>
+            <td>O sistema realiza o empenho automático e o comando de abertura de conta bancária vinculada.</td>
           </tr>
           <tr>
             <td><strong>05</strong></td>
             <td>Execução e Monitoramento</td>
-            <td>Comprovação das metas físicas no próprio TRANSFEREGOV.</td>
+            <td>O ente executa as metas físicas e apresenta o Relatório de Execução Simplificado focado nas entregas.</td>
           </tr>
         </tbody>
       </table>
@@ -458,52 +516,52 @@
 
     <!-- 7. FAQ -->
     <section class="no-break">
-      <h2 class="section-heading">7. Dúvidas Operacionais (FAQ)</h2>
+      <h2 class="section-heading">❓ 7. Dúvidas Operacionais (FAQ)</h2>
       
       <div class="callout callout-info">
-        <strong>1. Como funciona a adesão no TRANSFEREGOV?</strong><br>
-        O processo é eletrônico. O Ente federado localiza a chamada pública e manifesta interesse aderindo diretamente pelo sistema, preenchendo os dados e assinando digitalmente o termo.
+        <strong>1. Como funciona a adesão no TRANSFEREGOV.BR?</strong><br>
+        O processo é eletrônico e integrado. O proponente localiza o edital e manifesta interesse aderindo diretamente no TRANSFEREGOV.BR, assinando digitalmente o termo.
       </div>
       <div class="callout callout-info">
-        <strong>2. O que é a parametrização das políticas públicas?</strong><br>
-        É a predefinição das regras de negócio, metas padronizadas e documentos obrigatórios para cada programa finalístico de repasse direto no sistema.
+        <strong>2. O que significa parametrizar o edital?</strong><br>
+        É a predefinição pelo órgão concedente das regras de negócio, metas padronizadas e documentos exigidos, adaptando o sistema ao seu setor.
       </div>
       <div class="callout callout-info">
-        <strong>3. Qual o papel do ambiente de Treinamento?</strong><br>
-        Funciona como um simulador (sandbox) isolado, permitindo testes práticos de empenho e execução sem risco fiscal real.
+        <strong>3. Qual a importância da Sandbox de Treinamento?</strong><br>
+        Funciona como um simulador (sandbox) isolado, permitindo testes práticos de empenho e execução de forma prática e sem risco fiscal real.
       </div>
       <div class="callout callout-info">
-        <strong>4. Quais os principais benefícios?</strong><br>
-        Desburocratização extrema (fim do convênio clássico), empenho automático via SIAFI, foco em resultados e prestação baseada no objeto entregue.
+        <strong>4. Como ocorre a prestação de contas?</strong><br>
+        O foco é direcionado para a comprovação física do alcance do objeto e das metas cadastradas, simplificando a prestação documental ex-post.
       </div>
     </section>
 
     <!-- 8. RISCOS -->
     <section class="no-break">
-      <h2 class="section-heading">8. Pontos de Atenção e Riscos</h2>
+      <h2 class="section-heading">⚠️ 8. Pontos de Atenção e Riscos</h2>
       
       <div class="callout callout-danger">
-        <strong>⚠️ "Sintoma do Convênio" (Resistência Cultural):</strong><br>
-        Resistência técnica e cultural em desapegar dos procedimentos analíticos tradicionais, exigindo pilhas de documentos manuais densos que desfiguram a celeridade das parcerias.
+        <strong>⚠️ Sintoma do Convênio (Resistência Cultural):</strong><br>
+        Dificuldade cultural de técnicos em desapegar de controles ex-ante densos e Notas Fiscais unitárias ex-ante, o que invalida a celeridade proposta pela Transferência Simplificada.
       </div>
       
       <div class="callout callout-warn">
-        <strong>⚠️ Defeso Eleitoral Ordinário:</strong><br>
-        Observância rígida de prazos legais. Note que programas em calamidade/emergência orçamentária possuem exceções normativas; programas comuns ordinários devem respeitar as vedações eleitorais ordinárias.
+        <strong>⚠️ Prazos do Defeso Eleitoral:</strong><br>
+        Observância estrita do calendário eleitoral ordinário. Importante notar que apenas programas de Emergência ou Calamidade Pública formalmente decretada por portaria ministerial ativa possuem exceções de continuidade.
       </div>
     </section>
 
     <!-- 9. BOAS PRÁTICAS -->
     <section class="no-break">
-      <h2 class="section-heading">9. Boas Práticas Operacionais</h2>
+      <h2 class="section-heading">✅ 9. Boas Práticas Operacionais</h2>
       
       <div class="callout callout-success">
-        <strong>✅ Acesso Livre e Sandbox:</strong><br>
-        Utilizar o módulo no ambiente de treinamento sem necessidade de certificado digital imediato para simular 90% das telas sem risco de alteração de dados.
+        <strong>✅ Treinamento Prévio em Sandbox:</strong><br>
+        Utilização intensiva do ambiente de treinamento livre para simular 90% das telas sem necessidade imediata de certificado digital.
       </div>
       <div class="callout callout-success">
         <strong>✅ Diálogo Técnico Permanente:</strong><br>
-        Centralizar discussões operacionais de parametrização e regras de negócio em fóruns específicos e canais integrados para dirimir dúvidas com agilidade.
+        Abertura de chats técnicos ou fóruns integrados para esclarecer parametrizações de metas com o órgão concedente antes de abrir o edital.
       </div>
     </section>
 
