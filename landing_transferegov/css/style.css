@@ -62,7 +62,7 @@ header {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -72,7 +72,7 @@ header {
 .logo {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, var(--text-primary) 30%, var(--secondary));
   -webkit-background-clip: text;
@@ -80,16 +80,18 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .logo span {
   color: var(--primary);
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 1.15rem;
   padding: 0.15rem 0.4rem;
   border: 1px solid var(--primary);
   border-radius: 4px;
   -webkit-text-fill-color: var(--primary);
+  white-space: nowrap;
 }
 
 nav ul {
