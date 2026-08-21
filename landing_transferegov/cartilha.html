@@ -6,21 +6,28 @@
   <title>Cartilha de Nivelamento — Módulo de Gestão de Parcerias e TRANSFEREGOV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Verdana&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #0284c7;
-      --primary-dark: #0369a1;
-      --secondary: #0ea5e9;
-      --accent: #10b981;
-      --accent-danger: #ef4444;
-      --accent-warn: #f59e0b;
-      --bg-dark: #0b111e;
-      --bg-card: rgba(255, 255, 255, 0.02);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --border: rgba(255, 255, 255, 0.1);
-      --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+      /* Primárias institucionais */
+      --gov-blue-warm-vivid-60: hsl(215, 45%, 45%);
+      --gov-blue-warm-vivid-10: hsl(210, 60%, 90%);
+      --gov-indigo-cool-60: hsl(226, 45%, 45%);
+
+      /* Feedback */
+      --gov-green-cool-vivid-50: hsl(158, 100%, 25%);
+      --gov-yellow-vivid-20: hsl(46, 100%, 74%);
+      --gov-red-vivid-50: hsl(0, 100%, 38%);
+
+      /* Neutros */
+      --gov-gray-90: hsl(0, 0%, 11%);
+      --gov-gray-60: hsl(0, 0%, 39%);
+      --gov-gray-20: hsl(0, 0%, 80%);
+      --gov-gray-10: hsl(0, 0%, 95%);
+      --gov-pure-0: #FFFFFF;
+      --gov-pure-100: #000000;
+
+      --font-main: 'Verdana', sans-serif;
     }
 
     * {
@@ -31,21 +38,21 @@
 
     body {
       font-family: var(--font-main);
-      color: var(--text-main);
-      background-color: #0b111e;
+      color: var(--gov-gray-90);
+      background-color: var(--gov-gray-10);
       line-height: 1.6;
-      font-size: 10.5pt;
+      font-size: 14px;
     }
 
     .document-page {
       max-width: 210mm;
       min-height: 297mm;
-      margin: 20px auto;
-      background: #0f172a;
+      margin: 30px auto;
+      background: var(--gov-pure-0);
       padding: 22mm 20mm;
       border-radius: 8px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-      border: 1px solid var(--border);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      border: 1px solid var(--gov-gray-20);
       position: relative;
     }
 
@@ -59,8 +66,8 @@
     }
 
     .btn-action {
-      background: var(--primary);
-      color: #fff;
+      background: var(--gov-blue-warm-vivid-60);
+      color: var(--gov-pure-0);
       border: none;
       padding: 10px 18px;
       border-radius: 6px;
@@ -70,31 +77,31 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       transition: all 0.2s ease;
       text-decoration: none;
     }
 
     .btn-action:hover {
-      background: var(--primary-dark);
+      background: var(--gov-indigo-cool-60);
       transform: translateY(-2px);
     }
 
     .cover-page {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: #ffffff;
-      padding: 40px 30px;
+      background: linear-gradient(135deg, var(--gov-blue-warm-vivid-60) 0%, var(--gov-indigo-cool-60) 100%);
+      color: var(--gov-pure-0);
+      padding: 50px 40px;
       border-radius: 12px;
       margin-bottom: 30px;
-      border-left: 6px solid var(--secondary);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-left: 6px solid var(--gov-yellow-vivid-20);
+      position: relative;
     }
 
     .cover-badge {
       display: inline-block;
-      background: rgba(14, 165, 233, 0.15);
-      color: var(--secondary);
-      border: 1px solid rgba(14, 165, 233, 0.4);
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--gov-yellow-vivid-20);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 4px 10px;
       border-radius: 4px;
       font-size: 0.75rem;
@@ -105,45 +112,119 @@
     }
 
     .cover-title {
-      font-size: 1.8rem;
+      font-size: 24px;
       font-weight: 800;
-      color: #ffffff;
+      color: var(--gov-pure-0);
       line-height: 1.2;
       margin-bottom: 10px;
     }
 
     .cover-subtitle {
-      font-size: 1.05rem;
-      color: #94a3b8;
+      font-size: 16px;
+      color: var(--gov-gray-10);
       margin-bottom: 20px;
     }
 
     .cover-meta {
-      font-size: 0.8rem;
-      color: #64748b;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 12px;
+      color: var(--gov-gray-10);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
       padding-top: 15px;
       display: flex;
       justify-content: space-between;
     }
 
-    h2.section-heading {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 6px;
-      margin-top: 25px;
-      margin-bottom: 14px;
+    .expediente-section {
+      background: var(--gov-gray-10);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 30px;
+      border: 1px solid var(--gov-gray-20);
+    }
+
+    .expediente-section h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--gov-blue-warm-vivid-60);
+    }
+
+    .expediente-list {
+      list-style: none;
+    }
+
+    .expediente-list li {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: var(--gov-gray-60);
+    }
+
+    .sumario-section {
+      background: var(--gov-pure-0);
+      border: 1px solid var(--gov-gray-20);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .sumario-section h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--gov-blue-warm-vivid-60);
+    }
+
+    .sumario-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .sumario-links a {
+      color: var(--gov-blue-warm-vivid-60);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .sumario-links a:hover {
+      text-decoration: underline;
+    }
+
+    .section-container {
+      margin-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    .num-header-wrapper {
       display: flex;
-      align-items: center;
-      gap: 8px;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .section-num {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--gov-blue-warm-vivid-60);
+      font-family: var(--font-main);
+    }
+
+    h2.section-heading {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gov-gray-90);
+      border-bottom: 2px solid var(--gov-gray-20);
+      padding-bottom: 6px;
+      flex: 1;
     }
 
     h3.sub-heading {
-      font-size: 1.05rem;
+      font-size: 18px;
       font-weight: 600;
-      color: var(--secondary);
+      color: var(--gov-blue-warm-vivid-60);
       margin-top: 16px;
       margin-bottom: 8px;
     }
@@ -151,107 +232,186 @@
     p {
       margin-bottom: 12px;
       text-align: justify;
-      color: #cbd5e1;
+      color: var(--gov-gray-60);
+      font-size: 14px;
     }
 
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin: 14px 0;
+      gap: 16px;
+      margin: 16px 0;
     }
 
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin: 14px 0;
+      gap: 16px;
+      margin: 16px 0;
     }
 
     .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 14px;
+      background: var(--gov-gray-10);
+      border: 1px solid var(--gov-gray-20);
+      border-radius: 8px;
+      padding: 16px;
     }
 
     .card h4 {
-      font-size: 0.95rem;
-      color: #ffffff;
-      margin-bottom: 6px;
+      font-size: 14px;
+      color: var(--gov-gray-90);
+      margin-bottom: 8px;
       font-weight: 700;
     }
 
     .card p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
+      font-size: 14px;
+      color: var(--gov-gray-60);
       margin: 0;
-      line-height: 1.45;
     }
 
     .callout {
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin: 14px 0;
-      font-size: 0.9rem;
-      border-left: 4px solid var(--primary);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
     }
 
     .callout-title {
       font-weight: 700;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      margin-bottom: 6px;
+      color: var(--gov-gray-90);
     }
 
-    .callout-info { border-color: var(--secondary); background: rgba(14, 165, 233, 0.05); color: #e0f2fe; }
-    .callout-warn { border-color: var(--accent-warn); background: rgba(245, 158, 11, 0.05); color: #fef3c7; }
-    .callout-danger { border-color: var(--accent-danger); background: rgba(239, 68, 68, 0.05); color: #fee2e2; }
-    .callout-success { border-color: var(--accent); background: rgba(16, 185, 129, 0.05); color: #dcfce7; }
+    /* Gov.br Specific Callouts */
+    .callout-atencao { 
+      border-left: 4px solid var(--gov-yellow-vivid-20); 
+      background: var(--gov-yellow-vivid-20); 
+      color: var(--gov-gray-90);
+    }
+    
+    .callout-importante { 
+      border-left: 4px solid var(--gov-blue-warm-vivid-60); 
+      background: var(--gov-blue-warm-vivid-10); 
+      color: var(--gov-gray-90);
+    }
+    
+    .callout-mensagem { 
+      border-left: 4px solid var(--gov-indigo-cool-60); 
+      background: var(--gov-gray-10); 
+      color: var(--gov-gray-90);
+    }
+
+    .callout-perigo {
+      border-left: 4px solid var(--gov-red-vivid-50);
+      background: rgba(239, 68, 68, 0.1);
+      color: var(--gov-gray-90);
+    }
 
     table.data-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 14px 0;
-      font-size: 0.85rem;
+      margin: 16px 0;
+      font-size: 14px;
     }
 
     table.data-table th, 
     table.data-table td {
-      border: 1px solid var(--border);
-      padding: 8px 12px;
+      border: 1px solid var(--gov-gray-20);
+      padding: 10px 14px;
       text-align: left;
     }
 
     table.data-table th {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--gov-blue-warm-vivid-60);
       font-weight: 700;
-      color: #ffffff;
+      color: var(--gov-pure-0);
     }
 
     table.data-table tr:nth-child(even) td {
-      background: rgba(255, 255, 255, 0.01);
+      background: var(--gov-gray-10);
     }
 
     .badge {
       display: inline-block;
       padding: 2px 6px;
       border-radius: 4px;
-      font-size: 0.7rem;
+      font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
     }
 
-    .badge-primary { background: rgba(14, 165, 233, 0.2); color: var(--secondary); }
-    .badge-success { background: rgba(16, 185, 129, 0.2); color: var(--accent); }
-    .badge-danger { background: rgba(239, 68, 68, 0.2); color: var(--accent-danger); }
+    .badge-primary { background: var(--gov-blue-warm-vivid-10); color: var(--gov-blue-warm-vivid-60); }
+    .badge-success { background: rgba(16, 185, 129, 0.2); color: var(--gov-green-cool-vivid-50); }
+    .badge-danger { background: rgba(239, 68, 68, 0.2); color: var(--gov-red-vivid-50); }
+
+    .image-caption {
+      font-size: 12px;
+      color: var(--gov-gray-60);
+      margin-top: 4px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .contracapa-section {
+      margin-top: 60px;
+      border-top: 1px solid var(--gov-gray-20);
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    .qr-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .qr-box {
+      border: 1px solid var(--gov-gray-20);
+      padding: 10px;
+      border-radius: 8px;
+      background: var(--gov-pure-0);
+      max-width: 170px;
+    }
+
+    .qr-box img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .qr-label {
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 6px;
+      color: var(--gov-gray-60);
+    }
+
+    @media (max-width: 768px) {
+      .document-page {
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+        border-radius: 0;
+        border: none;
+      }
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .sumario-links {
+        grid-template-columns: 1fr;
+      }
+      .qr-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
     @media print {
       body {
         background: none;
-        color: #000;
-        font-size: 9.5pt;
+        color: var(--gov-pure-100);
+        font-size: 12pt;
       }
 
       .action-bar {
@@ -269,64 +429,67 @@
       }
 
       .cover-page {
-        background: #f8fafc !important;
-        color: #0f172a !important;
-        border: 1px solid #e2e8f0;
-        border-left: 6px solid var(--primary) !important;
+        background: var(--gov-gray-10) !important;
+        color: var(--gov-pure-100) !important;
+        border: 1px solid var(--gov-gray-20);
+        border-left: 6px solid var(--gov-blue-warm-vivid-60) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
 
       .cover-title {
-        color: #0f172a !important;
+        color: var(--gov-pure-100) !important;
       }
 
       .cover-subtitle {
-        color: #475569 !important;
+        color: var(--gov-gray-60) !important;
+      }
+
+      .cover-badge {
+        background: var(--gov-pure-0) !important;
+        border: 1px solid var(--gov-gray-60) !important;
+        color: var(--gov-blue-warm-vivid-60) !important;
+      }
+
+      .cover-meta {
+        color: var(--gov-gray-60) !important;
+        border-top: 1px solid var(--gov-gray-20) !important;
       }
 
       h2.section-heading {
-        color: #0f172a !important;
-        border-bottom: 2px solid #e2e8f0 !important;
+        color: var(--gov-pure-100) !important;
+        border-bottom: 2px solid var(--gov-gray-20) !important;
       }
 
       h3.sub-heading {
-        color: #0369a1 !important;
+        color: var(--gov-blue-warm-vivid-60) !important;
       }
 
       p {
-        color: #334155 !important;
+        color: var(--gov-gray-90) !important;
       }
 
       .card {
-        background: #f8fafc !important;
-        border: 1px solid #e2e8f0 !important;
+        background: var(--gov-gray-10) !important;
+        border: 1px solid var(--gov-gray-20) !important;
       }
 
-      .card h4 {
-        color: #0f172a !important;
-      }
-
-      .card p {
-        color: #475569 !important;
-      }
-
-      .callout-info { border-color: #0284c7 !important; background: #f0f9ff !important; color: #0369a1 !important; }
-      .callout-warn { border-color: #f59e0b !important; background: #fffbeb !important; color: #b45309 !important; }
-      .callout-danger { border-color: #ef4444 !important; background: #fef2f2 !important; color: #991b1b !important; }
-      .callout-success { border-color: #10b981 !important; background: #f0fdf4 !important; color: #15803d !important; }
+      .callout-atencao { border-left: 4px solid var(--gov-yellow-vivid-20) !important; background: var(--gov-gray-10) !important; color: var(--gov-pure-100) !important; }
+      .callout-importante { border-left: 4px solid var(--gov-blue-warm-vivid-60) !important; background: var(--gov-gray-10) !important; color: var(--gov-pure-100) !important; }
+      .callout-mensagem { border-left: 4px solid var(--gov-indigo-cool-60) !important; background: var(--gov-gray-10) !important; color: var(--gov-pure-100) !important; }
+      .callout-perigo { border-left: 4px solid var(--gov-red-vivid-50) !important; background: var(--gov-gray-10) !important; color: var(--gov-pure-100) !important; }
 
       table.data-table th {
-        background: #f1f5f9 !important;
-        color: #0f172a !important;
+        background: var(--gov-gray-20) !important;
+        color: var(--gov-pure-100) !important;
       }
 
       table.data-table td {
-        color: #334155 !important;
+        color: var(--gov-pure-100) !important;
       }
 
       table.data-table tr:nth-child(even) td {
-        background: #f8fafc !important;
+        background: var(--gov-gray-10) !important;
       }
 
       .page-break {
@@ -339,7 +502,7 @@
 
       @page {
         size: A4;
-        margin: 15mm 15mm 20mm 15mm;
+        margin: 15mm;
       }
     }
   </style>
@@ -363,28 +526,69 @@
       <p class="cover-subtitle">Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR</p>
       <div class="cover-meta">
         <span><strong>Versão:</strong> 2.3.0 (Edição Atualizada)</span>
-        <span><strong>Público:</strong> Concedentes, Estados, Municípios e OSCs</span>
+        <span><strong>MGI / SEGES</strong> — 2026</span>
       </div>
     </header>
 
+    <!-- EXPEDIENTE -->
+    <section class="expediente-section no-break">
+      <h3>Expediente e Ficha Técnica</h3>
+      <ul class="expediente-list">
+        <li><strong>Coordenação Geral:</strong> Secretaria de Gestão e Inovação (SEGES) / MGI</li>
+        <li><strong>Desenvolvimento Técnico:</strong> Equipe de Capacitação da Rede de Parcerias</li>
+        <li><strong>Design e Acessibilidade:</strong> Diretoria de Tecnologia e Informações Operacionais</li>
+        <li><strong>Parceiros Institucionais:</strong> Estados, Municípios e Organizações da Sociedade Civil (OSCs)</li>
+      </ul>
+    </section>
+
+    <!-- SUMÁRIO -->
+    <section class="sumario-section no-break">
+      <h3>Sumário de Navegação</h3>
+      <ul class="sumario-links">
+        <li><a href="#cap1">1. Sumário Executivo</a></li>
+        <li><a href="#cap2">2. Contexto Institucional</a></li>
+        <li><a href="#cap3">3. Arquitetura Técnica</a></li>
+        <li><a href="#cap4">4. Parametrização</a></li>
+        <li><a href="#cap5">5. Ordem de Pagamento (OPP)</a></li>
+        <li><a href="#cap6">6. Jornada da Transferência</a></li>
+        <li><a href="#cap7">7. Dúvidas Frequentes (FAQ)</a></li>
+        <li><a href="#cap8">8. Pontos de Atenção e Riscos</a></li>
+        <li><a href="#cap9">9. Boas Práticas Operacionais</a></li>
+        <li><a href="#glossario">Glossário de Termos</a></li>
+      </ul>
+    </section>
+
+    <div class="page-break"></div>
+
     <!-- 1. SUMÁRIO EXECUTIVO -->
-    <section>
-      <h2 class="section-heading">⚡ 1. Sumário Executivo</h2>
+    <section class="section-container" id="cap1">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">01</span>
+        <h2 class="section-heading">Sumário Executivo</h2>
+      </div>
       <p>A modernização dos repasses de recursos no âmbito federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV.BR</strong>. Esta mudança é uma resposta direta à necessidade de conferir celeridade e eficiência à execução de políticas públicas críticas de fomento e parcerias, otimizando o relacionamento interfederativo.</p>
       
-      <div class="callout callout-info">
-        <div class="callout-title">⚡ Principais Conclusões:</div>
+      <div class="callout callout-importante">
+        <div class="callout-title">Importante — Principais Conclusões:</div>
         <p>• <strong>Ruptura de Paradigma:</strong> Dispensa convênios ou instrumentos complexos ex-ante, focando no objeto físico.</p>
         <p>• <strong>Padronização Técnica:</strong> Utiliza metas físicas pré-configuradas no Módulo de Gestão de Parcerias.</p>
         <p>• <strong>Mapeamento Estrutural:</strong> Uso de SIORG setorial (ex: Departamento Gestor - 267384) para controle administrativo.</p>
         <p>• <strong>Gestão de Riscos Eficiente:</strong> Regras de exceção (como o defeso eleitoral) parametrizadas por tipo de programa no sistema.</p>
         <p>• <strong>Rastreabilidade Financeira:</strong> Integração nativa com SIAFI para abertura de contas e conciliação em tempo real.</p>
       </div>
+
+      <div style="margin: 20px 0; text-align: center;">
+        <img src="materiais_complementares/slides/Guia_das_Transferências_Simplificadas_Transferegov.png" alt="Guia das Transferências Simplificadas" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--gov-gray-20);">
+        <p class="image-caption">Imagem ilustrativa — Visão geral da transição das parcerias no TRANSFEREGOV.BR.</p>
+      </div>
     </section>
 
     <!-- 2. CONTEXTO INSTITUCIONAL -->
-    <section class="no-break">
-      <h2 class="section-heading">🏛️ 2. Contexto Institucional e Base Normativa</h2>
+    <section class="section-container no-break" id="cap2">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">02</span>
+        <h2 class="section-heading">Contexto Institucional e Base Normativa</h2>
+      </div>
       <p>A implementação desta nova modalidade é sustentada por Acordos de Cooperação Técnica (ACT) firmados entre o Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e os órgãos federais parceiros. Este acordo formaliza o suporte técnico para a internalização de políticas finalísticas no ecossistema de transferências da União, substituindo a análise documental analítica por uma sistemática de adesão rápida.</p>
       
       <div class="grid-2">
@@ -400,8 +604,11 @@
     </section>
 
     <!-- 3. ARQUITETURA TÉCNICA -->
-    <section class="no-break">
-      <h2 class="section-heading">⚙️ 3. Arquitetura Técnica do TRANSFEREGOV.BR</h2>
+    <section class="section-container no-break" id="cap3">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">03</span>
+        <h2 class="section-heading">Arquitetura Técnica do TRANSFEREGOV.BR</h2>
+      </div>
       <p>A robustez do TRANSFEREGOV.BR garante a integridade dos recursos federais. A arquitetura sistêmica é subdividida em três ambientes principais:</p>
       
       <div class="grid-3">
@@ -419,20 +626,24 @@
         </div>
       </div>
       
-      <div class="callout callout-info" style="margin-top:10px;">
+      <div class="callout callout-mensagem" style="margin-top:16px;">
+        <div class="callout-title">Mensagem central:</div>
         <strong>Solução Técnica SIORG:</strong> Para viabilizar a vinculação administrativa de conselhos ou fundos finalísticos sem código de Unidade Gestora própria, a plataforma utiliza a vinculação via código de SIORG (ex: código do Departamento Gestor de Recursos - 267384) e perfis específicos para servidores.
       </div>
     </section>
 
     <!-- 4. PARAMETRIZAÇÃO -->
-    <section class="no-break">
-      <h2 class="section-heading">🔧 4. Parametrização por Política Pública</h2>
+    <section class="section-container no-break" id="cap4">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">04</span>
+        <h2 class="section-heading">Parametrização por Política Pública</h2>
+      </div>
       <p>O Módulo de Gestão de Parcerias do TRANSFEREGOV.BR se adapta às particularidades de diferentes políticas públicas por meio de configurações no sistema:</p>
       
-      <div class="card" style="margin-bottom:10px;">
+      <div class="card" style="margin-bottom:16px;">
         <strong>1. Requisitos de Habilitação:</strong> Definição automatizada de critérios técnicos e fiscais que os proponentes devem cumprir eletronicamente.
       </div>
-      <div class="card" style="margin-bottom:10px;">
+      <div class="card" style="margin-bottom:16px;">
         <strong>2. Anexos Obrigatórios:</strong> Possibilidade de restringir a adesão à inserção de planos setoriais específicos de trabalho (ex: planos de contingência, declarações locais).
       </div>
       <div class="card">
@@ -443,8 +654,11 @@
     <div class="page-break"></div>
 
     <!-- 5. OPP -->
-    <section>
-      <h2 class="section-heading">💳 5. Ordem de Pagamento de Parcerias (OPP)</h2>
+    <section class="section-container" id="cap5">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">05</span>
+        <h2 class="section-heading">Ordem de Pagamento de Parcerias (OPP)</h2>
+      </div>
       <p>A OPP é o instrumento financeiro definitivo de automatização bancária das parcerias. Ela assegura e agiliza a liberação dos recursos federais:</p>
       
       <div class="grid-2">
@@ -466,14 +680,23 @@
         </div>
       </div>
       
-      <div class="callout callout-warn" style="margin-top:15px;">
-        <strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.
+      <div class="callout callout-importante" style="margin-top:16px;">
+        <div class="callout-title">Importante — Ficha Técnica e Prazos:</div>
+        Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.
+      </div>
+
+      <div style="margin: 20px 0; text-align: center;">
+        <img src="materiais_complementares/OPP TREINAMENTO/Fluxo_da_Ordem_de_Pagamento.png" alt="Fluxo da Ordem de Pagamento" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--gov-gray-20);">
+        <p class="image-caption">Imagem ilustrativa — Diagrama operacional da Ordem de Pagamento de Parcerias (OPP).</p>
       </div>
     </section>
 
     <!-- 6. JORNADA -->
-    <section class="no-break">
-      <h2 class="section-heading">🗺️ 6. Jornada da Transferência</h2>
+    <section class="section-container no-break" id="cap6">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">06</span>
+        <h2 class="section-heading">Jornada da Transferência</h2>
+      </div>
       <p>A jornada de repasses simplificados substitui os planos de trabalho densos por um fluxo lógico em 5 etapas no sistema:</p>
       
       <table class="data-table">
@@ -512,58 +735,125 @@
           </tr>
         </tbody>
       </table>
+
+      <div style="margin: 20px 0; text-align: center;">
+        <img src="materiais_complementares/slides/Jornada_da_Transferência_Simplificada (1).png" alt="Jornada da Transferência Simplificada" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--gov-gray-20);">
+        <p class="image-caption">Imagem ilustrativa — Trilha operacional interfederativa da proposição à entrega do objeto.</p>
+      </div>
     </section>
 
     <!-- 7. FAQ -->
-    <section class="no-break">
-      <h2 class="section-heading">❓ 7. Dúvidas Operacionais (FAQ)</h2>
+    <section class="section-container no-break" id="cap7">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">07</span>
+        <h2 class="section-heading">Dúvidas Operacionais (FAQ)</h2>
+      </div>
       
-      <div class="callout callout-info">
-        <strong>1. Como funciona a adesão no TRANSFEREGOV.BR?</strong><br>
+      <div class="callout callout-importante">
+        <strong>Como funciona a adesão no TRANSFEREGOV.BR?</strong><br>
         O processo é eletrônico e integrado. O proponente localiza o edital e manifesta interesse aderindo diretamente no TRANSFEREGOV.BR, assinando digitalmente o termo.
       </div>
-      <div class="callout callout-info">
-        <strong>2. O que significa parametrizar o edital?</strong><br>
+      <div class="callout callout-importante">
+        <strong>O que significa parametrizar o edital?</strong><br>
         É a predefinição pelo órgão concedente das regras de negócio, metas padronizadas e documentos exigidos, adaptando o sistema ao seu setor.
       </div>
-      <div class="callout callout-info">
-        <strong>3. Qual a importância da Sandbox de Treinamento?</strong><br>
+      <div class="callout callout-importante">
+        <strong>Qual a importância da Sandbox de Treinamento?</strong><br>
         Funciona como um simulador (sandbox) isolado, permitindo testes práticos de empenho e execução de forma prática e sem risco fiscal real.
       </div>
-      <div class="callout callout-info">
-        <strong>4. Como ocorre a prestação de contas?</strong><br>
+      <div class="callout callout-importante">
+        <strong>Como ocorre a prestação de contas?</strong><br>
         O foco é direcionado para a comprovação física do alcance do objeto e das metas cadastradas, simplificando a prestação documental ex-post.
       </div>
     </section>
 
     <!-- 8. RISCOS -->
-    <section class="no-break">
-      <h2 class="section-heading">⚠️ 8. Pontos de Atenção e Riscos</h2>
+    <section class="section-container no-break" id="cap8">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">08</span>
+        <h2 class="section-heading">Pontos de Atenção e Riscos</h2>
+      </div>
       
-      <div class="callout callout-danger">
-        <strong>⚠️ Sintoma do Convênio (Resistência Cultural):</strong><br>
+      <div class="callout callout-perigo">
+        <div class="callout-title">Atenção — Sintoma do Convênio (Resistência Cultural):</div>
         Dificuldade cultural de técnicos em desapegar de controles ex-ante densos e Notas Fiscais unitárias ex-ante, o que invalida a celeridade proposta pela Transferência Simplificada.
       </div>
       
-      <div class="callout callout-warn">
-        <strong>⚠️ Prazos do Defeso Eleitoral:</strong><br>
+      <div class="callout callout-atencao">
+        <div class="callout-title">Atenção — Prazos do Defeso Eleitoral:</div>
         Observância estrita do calendário eleitoral ordinário. Importante notar que apenas programas de Emergência ou Calamidade Pública formalmente decretada por portaria ministerial ativa possuem exceções de continuidade.
       </div>
     </section>
 
     <!-- 9. BOAS PRÁTICAS -->
-    <section class="no-break">
-      <h2 class="section-heading">✅ 9. Boas Práticas Operacionais</h2>
+    <section class="section-container no-break" id="cap9">
+      <div class="num-header-wrapper">
+        <span class="section-num" aria-hidden="true">09</span>
+        <h2 class="section-heading">Boas Práticas Operacionais</h2>
+      </div>
       
-      <div class="callout callout-success">
-        <strong>✅ Treinamento Prévio em Sandbox:</strong><br>
+      <div class="callout callout-mensagem">
+        <div class="callout-title">Mensagem central — Treinamento Prévio em Sandbox:</div>
         Utilização intensiva do ambiente de treinamento livre para simular 90% das telas sem necessidade imediata de certificado digital.
       </div>
-      <div class="callout callout-success">
-        <strong>✅ Diálogo Técnico Permanente:</strong><br>
+      <div class="callout callout-mensagem">
+        <div class="callout-title">Mensagem central — Diálogo Técnico Permanente:</div>
         Abertura de chats técnicos ou fóruns integrados para esclarecer parametrizações de metas com o órgão concedente antes de abrir o edital.
       </div>
+
+      <div style="margin: 20px 0; text-align: center;">
+        <img src="materiais_complementares/slides/NotebookLM Mind Map (14).png" alt="Miniatura do Mapa Mental do Treinamento" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--gov-gray-20);">
+        <p class="image-caption">Imagem ilustrativa — Mapa mental sintético de suporte à implantação e boas práticas.</p>
+      </div>
     </section>
+
+    <!-- GLOSSÁRIO -->
+    <section class="section-container no-break" id="glossario">
+      <h2 class="section-heading">📖 Glossário de Termos</h2>
+      <p style="margin-top:10px;">Principais conceitos técnicos e siglas referenciados ao longo deste guia prático:</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-top:14px;">
+        <div class="card">
+          <strong>TRANSFEREGOV.BR:</strong> Plataforma integrada de operacionalização e controle das parcerias financeiras do Governo Federal.
+        </div>
+        <div class="card">
+          <strong>SIORG:</strong> Sistema de Informações Organizacionais do Governo Federal. Utilizado para mapeamento de responsabilidades administrativas no módulo.
+        </div>
+        <div class="card">
+          <strong>SIAFI:</strong> Sistema Integrado de Administração Financeira do Governo Federal. Responsável pelo empenho de fundos e abertura de contas bancárias vinculadas.
+        </div>
+        <div class="card">
+          <strong>OPP:</strong> Ordem de Pagamento de Parcerias. Canal de liquidação bancária automatizada e transparente em tempo real via Pix/QR Code.
+        </div>
+        <div class="card">
+          <strong>ACT:</strong> Acordo de Cooperação Técnica. Instrumento legal celebrado entre o MGI e o ministério parceiro para reger a utilização da Transferência Simplificada.
+        </div>
+        <div class="card">
+          <strong>Concedente:</strong> Órgão ou entidade da Administração Pública Federal responsável pela destinação do recurso e supervisão técnica.
+        </div>
+        <div class="card">
+          <strong>Proponente:</strong> Ente subnacional (Estado ou Município) ou OSC que manifesta interesse no edital e executa as metas pactuadas.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRACAPA -->
+    <footer class="contracapa-section no-break">
+      <p><strong>Secretaria de Gestão e Inovação (SEGES)</strong></p>
+      <p>Ministério da Gestão e da Inovação em Serviços Públicos (MGI)</p>
+      <p style="margin-top: 15px; font-size: 12px; color: var(--gov-gray-60);">Para mais informações ou suporte, acesse os portais oficiais:</p>
+      
+      <div class="qr-container">
+        <div class="qr-box">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tre-siconv.estaleiro.serpro.gov.br/ep-atos-prep-web/" alt="QR Code Sandbox Treinamento">
+          <div class="qr-label">1. Sandbox Treinamento</div>
+        </div>
+        <div class="qr-box">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.gov.br/transferegov/" alt="QR Code Portal Transferegov">
+          <div class="qr-label">2. Portal Transferegov</div>
+        </div>
+      </div>
+    </footer>
 
   </main>
   
