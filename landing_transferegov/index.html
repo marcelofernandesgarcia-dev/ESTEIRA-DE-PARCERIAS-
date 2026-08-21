@@ -51,6 +51,51 @@
         display: none !important;
       }
     }
+
+    /* Estilos do Botão Flutuante da Cartilha */
+    #floating-cartilha-btn {
+      position: fixed;
+      bottom: 5.5rem;
+      left: 2rem;
+      background: linear-gradient(135deg, #0284c7, #0ea5e9) !important;
+      color: #ffffff !important;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #floating-cartilha-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.6);
+      background: linear-gradient(135deg, #0369a1, #0284c7) !important;
+    }
+    @media (max-width: 768px) {
+      #floating-cartilha-btn {
+        bottom: 5rem;
+        left: 1.5rem;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      #floating-cartilha-btn .floating-text {
+        display: none;
+      }
+    }
+    @media print {
+      #floating-cartilha-btn {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -67,6 +112,12 @@
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
+
+    <!-- Botão Flutuante da Cartilha (Fixo na Tela) -->
+  <a href="cartilha.html" target="_blank" id="floating-cartilha-btn" title="Abrir / Imprimir Cartilha" aria-label="Abrir / Imprimir Cartilha">
+    <span class="floating-icon">📖</span>
+    <span class="floating-text">Cartilha de Nivelamento</span>
+  </a>
 
   <!-- Botão Flutuante de Treinamento (Fixo na Tela) -->
   <a href="https://tre-siconv.estaleiro.serpro.gov.br/ep-atos-prep-web/" target="_blank" rel="noopener noreferrer" id="floating-training-btn" title="Acessar Área de Treinamento (Sandbox)" aria-label="Acessar Área de Treinamento (Sandbox)">
