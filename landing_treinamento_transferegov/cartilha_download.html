@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartilha de Nivelamento — Módulo de Gestão de Parcerias e TRANSFEREGOV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       VARIÁVEIS DE DESIGN SYSTEM GOVERNAMENTAL
+       ========================================================================== */
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --secondary: #0ea5e9;
+      --accent: #10b981;
+      --accent-danger: #ef4444;
+      --accent-warn: #f59e0b;
+      --bg-dark: #0f172a;
+      --bg-card: #f8fafc;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-code: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--text-main);
+      background-color: #f1f5f9;
+      line-height: 1.6;
+      font-size: 10.5pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container de Folha A4 para visualização na tela */
+    .document-page {
+      max-width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 22mm 20mm;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    /* ==========================================================================
+       BOTÃO DE AÇÃO RÁPIDA (DOWNLOAD / IMPRESSÃO)
+       ========================================================================== */
+    .action-bar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-action {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-action:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       CAPA DO DOCUMENTO
+       ========================================================================== */
+    .cover-page {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border-left: 6px solid var(--secondary);
+    }
+
+    .cover-badge {
+      display: inline-block;
+      background: rgba(14, 165, 233, 0.15);
+      color: var(--secondary);
+      border: 1px solid rgba(14, 165, 233, 0.4);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .cover-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .cover-subtitle {
+      font-size: 1.05rem;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .cover-meta {
+      font-size: 0.8rem;
+      color: #64748b;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ==========================================================================
+       TIPOGRAFIA E TÍTULOS DE SEÇÃO
+       ========================================================================== */
+    h2.section-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--bg-dark);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+      margin-top: 25px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3.sub-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      text-align: justify;
+      color: #334155;
+    }
+
+    /* ==========================================================================
+       CARDS E GRIDS MODULARES
+       ========================================================================== */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px;
+    }
+
+    .card h4 {
+      font-size: 0.95rem;
+      color: var(--bg-dark);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       CALLOUTS INFORMATIVOS E DE RISCO
+       ========================================================================== */
+    .callout {
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 14px 0;
+      font-size: 0.9rem;
+      border-left: 4px solid var(--primary);
+      background: #f0f9ff;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .callout-info {
+      border-color: var(--primary);
+      background: #f0f9ff;
+      color: #0369a1;
+    }
+
+    .callout-warn {
+      border-color: var(--accent-warn);
+      background: #fffbeb;
+      color: #b45309;
+    }
+
+    .callout-danger {
+      border-color: var(--accent-danger);
+      background: #fef2f2;
+      color: #991b1b;
+    }
+
+    .callout-success {
+      border-color: var(--accent);
+      background: #f0fdf4;
+      color: #15803d;
+    }
+
+    /* ==========================================================================
+       TABELAS DE DADOS
+       ========================================================================== */
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 0.85rem;
+    }
+
+    table.data-table th, 
+    table.data-table td {
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    table.data-table th {
+      background: #f8fafc;
+      font-weight: 700;
+      color: var(--bg-dark);
+    }
+
+    table.data-table tr:nth-child(even) td {
+      background: #fbfcfe;
+    }
+
+    /* ==========================================================================
+       TAGS E BADGES
+       ========================================================================== */
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-primary { background: #e0f2fe; color: var(--primary-dark); }
+    .badge-success { background: #dcfce7; color: #166534; }
+    .badge-danger { background: #fee2e2; color: #991b1b; }
+
+    /* ==========================================================================
+       CONFIGURAÇÕES ESPECÍFICAS DE IMPRESSÃO / PDF (@page)
+       ========================================================================== */
+    @media print {
+      body {
+        background: none;
+        color: #000;
+        font-size: 9.5pt;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .document-page {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .cover-page {
+        background: #0f172a !important;
+        color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      .no-break {
+        page-break-inside: avoid;
+      }
+
+      @page {
+        size: A4;
+        margin: 15mm 15mm 20mm 15mm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Ações Rápidas (Oculta na Impressão) -->
+  <div class="action-bar">
+    <button onclick="window.print()" class="btn-action">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      Imprimir / Salvar em PDF
+    </button>
+  </div>
+
+  <main class="document-page">
+
+    <!-- CAPA DA CARTILHA -->
+    <header class="cover-page">
+      <span class="cover-badge">Guia Oficial de Capacitação</span>
+      <h1 class="cover-title">Cartilha de Nivelamento Técnico</h1>
+      <p class="cover-subtitle">Módulo de Gestão de Parcerias, Ecossistema TRANSFEREGOV.BR e a Rota da Ordem de Pagamento (OPP)</p>
+      <div class="cover-meta">
+        <span><strong>Versão:</strong> 2.3.0 (Edição Atualizada)</span>
+        <span><strong>Público:</strong> Órgãos Concedentes, Estados, Municípios e OSCs</span>
+      </div>
+    </header>
+
+    <!-- 1. SUMÁRIO EXECUTIVO -->
+    <section>
+      <h2 class="section-heading">1. Sumário Executivo</h2>
+      <p>
+        A modernização dos repasses de recursos na administração pública federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV.BR</strong>. Esta mudança rompe com a rigidez dos convênios tradicionais, adotando uma sistemática baseada em adesão eletrônica, metas padronizadas e foco estrito no alcance do objeto físico entregue à sociedade.
+      </p>
+
+      <div class="grid-2 no-break">
+        <div class="card">
+          <h4>⚡ Ruptura de Paradigma</h4>
+          <p>Dispensa planos de trabalho analíticos e convênios densos ex-ante, substituindo-os por adesão rápida a editais parametrizados.</p>
+        </div>
+        <div class="card">
+          <h4>🎯 Metas Padronizadas</h4>
+          <p>O órgão concedente cadastra previamente metas quantificáveis no sistema, agilizando a proposição e eliminando subjetividades.</p>
+        </div>
+        <div class="card">
+          <h4>🏛️ Flexibilidade SIORG</h4>
+          <p>Possibilita o mapeamento administrativo direto por código de SIORG (ex: Depto. de Gestão de Fundos - 267384), dispensando UG própria.</p>
+        </div>
+        <div class="card">
+          <h4>💳 Execução via OPP</h4>
+          <p>Integração bancária via API em tempo real com BB, Caixa e BNB, extinguindo o processamento contábil em lote (batch).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. COMPARATIVO CONVÊNIO TRADICIONAL X TRANSFERÊNCIA SIMPLIFICADA -->
+    <section class="no-break">
+      <h2 class="section-heading">2. Não é Convênio Tradicional (Matriz Comparativa)</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Dimensão</th>
+            <th>Modelo Convênio Tradicional (Siconvão)</th>
+            <th>Modelo Simplificado (TRANSFEREGOV.BR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Instrumento</strong></td>
+            <td>Termo de Convênio complexo e extenso</td>
+            <td>Adesão Eletrônica simples / Portaria</td>
+          </tr>
+          <tr>
+            <td><strong>Abertura de Contas</strong></td>
+            <td>Trâmite manual e burocrático em agência</td>
+            <td>Automatizada via API em 3 a 5 segundos</td>
+          </tr>
+          <tr>
+            <td><strong>Metas e Indicadores</strong></td>
+            <td>Planos livres criados do zero sem padrão</td>
+            <td>Metas físicas padronizadas pré-definidas</td>
+          </tr>
+          <tr>
+            <td><strong>Execução Financeira</strong></td>
+            <td>OBTV tradicional e processamento em lote</td>
+            <td>OPP instantânea (Pix / QR Code rastreável)</td>
+          </tr>
+          <tr>
+            <td><strong>Prestação de Contas</strong></td>
+            <td>Auditoria documental de notas fiscais unitárias</td>
+            <td>Relatório focado no alcance do objeto físico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 3. AMBIENTES DE OPERAÇÃO E ARQUITETURA -->
+    <section class="no-break">
+      <h2 class="section-heading">3. Ambientes de Operação</h2>
+      <div class="grid-3">
+        <div class="card">
+          <span class="badge badge-primary">Sandbox Livre</span>
+          <h4 style="margin-top: 6px;">1. Treinamento</h4>
+          <p>Simulador seguro sem necessidade de certificado digital imediato. Cerca de 90% das funcionalidades estão abertas para capacitação sem risco fiscal.</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-primary">Validação</span>
+          <h4 style="margin-top: 6px;">2. Homologação</h4>
+          <p>Ambiente destinado a testes de integração bancária via API e validação dos layouts de portarias antes da publicação oficial.</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-danger">Impacto Real</span>
+          <h4 style="margin-top: 6px;">3. Produção</h4>
+          <p>Execução oficial com empenho no SIAFI, liberação efetiva de parcelas financeiras e monitoramento formal de entregas.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- 4. NOVO MÓDULO: ORDEM DE PAGAMENTO DE PARCERIAS (OPP) -->
+    <section>
+      <h2 class="section-heading">4. A Rota da Ordem de Pagamento de Parcerias (OPP)</h2>
+      <p>
+        A <strong>OPP</strong> representa a modernização financeira definitiva das parcerias da União. Por determinação legal, o prazo de implantação foi condensado em <strong>180 dias</strong>, fixando <strong>dezembro de 2026</strong> como limite improrrogável para a migração compulsória de todas as 63.000 contas ativas do país.
+      </p>
+
+      <div class="grid-4 no-break">
+        <div class="card">
+          <h4>⚡ Disrupção API</h4>
+          <p>Execução em tempo real com bancos oficiais, excluindo arquivos de remessa em lote.</p>
+        </div>
+        <div class="card">
+          <h4>📱 Pix sem Teto</h4>
+          <p>Pagamento direto a fornecedores na ponta com leitura de QR Code e conciliação D-1.</p>
+        </div>
+        <div class="card">
+          <h4>🛡️ Dupla Autoria</h4>
+          <p>Assinatura segregada (Operador / Gestor) via Gov.br Ouro e token bancário.</p>
+        </div>
+        <div class="card">
+          <h4>🌊 Construção em Ondas</h4>
+          <p>Capacitação capilar, agendamento de caixa e gestão remota de contas pelo concedente.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-info no-break">
+        <div class="callout-title">
+          <span>🏦</span> Ficha Técnica Operacional da OPP
+        </div>
+        <p style="margin: 0; font-size: 0.85rem; color: #0369a1;">
+          <strong>Janela Bancária:</strong> Operação de 2ª a 6ª, das 07h às 19h30 (autorizações até as 20h). Bloqueado aos fins de semana.<br>
+          <strong>Imutabilidade:</strong> Exclusão lógica inviolável. Incorreções são tratadas via estorno e reemissão de nova transação.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. JORNADA OPERACIONAL EM 5 ETAPAS -->
+    <section class="no-break">
+      <h2 class="section-heading">5. Jornada Passo a Passo da Transferência</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Etapa</th>
+            <th style="width: 25%;">Responsável</th>
+            <th>Ação Sistêmica / Documento Gerado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01. Convocatória</strong></td>
+            <td>Concedente Federal</td>
+            <td>Publicação da chamada pública com definição de metas padronizadas e regras ex-ante no TRANSFEREGOV.BR.</td>
+          </tr>
+          <tr>
+            <td><strong>02. Proposição</strong></td>
+            <td>Proponente (Estado/Município/OSC)</td>
+            <td>Manifestação de interesse eletrônica, adesão às metas do edital e envio de anexos técnicos obrigatórios.</td>
+          </tr>
+          <tr>
+            <td><strong>03. Validação</strong></td>
+            <td>Concedente Federal</td>
+            <td>Análise técnica simplificada e emissão do parecer digital de aprovação.</td>
+          </tr>
+          <tr>
+            <td><strong>04. SIAFI</strong></td>
+            <td>Sistema (Automático)</td>
+            <td>Empenho automático do recurso e comando instantâneo de abertura de conta bancária vinculada.</td>
+          </tr>
+          <tr>
+            <td><strong>05. Ciclo Final</strong></td>
+            <td>Proponente</td>
+            <td>Execução financeira via OPP e apresentação do Relatório de Execução Simplificado do objeto físico.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 6. PONTOS DE ATENÇÃO, RISCOS E PREVENÇÃO TÉCNICA -->
+    <section class="no-break">
+      <h2 class="section-heading">6. Pontos de Atenção e Prevenção Técnica</h2>
+      
+      <div class="callout callout-danger">
+        <div class="callout-title">
+          <span>⚠️</span> Risco Crítico: O "Sintoma do Convênio"
+        </div>
+        <p style="margin: 0; font-size: 0.85rem; color: #991b1b;">
+          <strong>Prevenção:</strong> A resistência técnica em exigir pilhas de notas fiscais e relatórios prévios analíticos paralisa a celeridade do repasse. As equipes devem confiar estritamente nos limites da parametrização aprovada no TRANSFEREGOV.BR e fiscalizar a entrega física da política pública.
+        </p>
+      </div>
+
+      <div class="callout callout-warn">
+        <div class="callout-title">
+          <span>⏱️</span> Defeso Eleitoral e Regras de Exceção
+        </div>
+        <p style="margin: 0; font-size: 0.85rem; color: #b45309;">
+          <strong>Regra Geral:</strong> Observância rigorosa do calendário eleitoral. Apenas transferências amparadas em calamidade ou emergência formalmente decretada possuem prerrogativa de continuidade durante o período restritivo.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. GLOSSÁRIO ESSENCIAL -->
+    <section class="no-break">
+      <h2 class="section-heading">7. Glossário Essencial</h2>
+      <div class="grid-3" style="font-size: 0.8rem;">
+        <div class="card">
+          <strong>OPP:</strong> Ordem de Pagamento de Parcerias via API bancária em tempo real.
+        </div>
+        <div class="card">
+          <strong>SIORG:</strong> Identificador estrutural da unidade administrativa responsável.
+        </div>
+        <div class="card">
+          <strong>Metas Padronizadas:</strong> Objetivos físicos pré-configurados para rápida adesão.
+        </div>
+        <div class="card">
+          <strong>Cláusula Suspensiva:</strong> Trava sistêmica que condiciona parcelas à entrega física.
+        </div>
+        <div class="card">
+          <strong>Gov.br Ouro:</strong> Nível máximo de autenticação para autorizações financeiras.
+        </div>
+        <div class="card">
+          <strong>Relatório do Objeto:</strong> Comprovação focada no resultado físico entregue.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Small timeout to allow css styles to render properly
+      setTimeout(() => {
+        window.print();
+      }, 350);
+    });
+  </script>
+</body>
+</html>
