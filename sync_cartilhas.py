@@ -95,7 +95,7 @@ chapters_data = {
     "subtitle": "Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR\nGuia Prático para Órgãos Concedentes Federais, Estados, Municípios e OSCs",
     "meta_info": "Versão: 2.3.0 (Edição Atualizada)\nPúblico: Concedentes, Estados, Municípios e OSCs",
     "expediente": [
-        "Coordenação Geral: Secretaria de Gestão e Inovação (SEGES) / MGI",
+        "Coordenação Geral: Diretoria de Parcerias e Transferências - DTPAR/SEGES/MGI",
         "Desenvolvimento Técnico: Equipe de Capacitação da Rede de Parcerias",
         "Design e Acessibilidade: Diretoria de Tecnologia e Informações Operacionais",
         "Parceiros Institucionais: Estados, Municípios e Organizações da Sociedade Civil (OSCs)"
@@ -940,7 +940,7 @@ def generate_html_files():
     <section class="expediente-section no-break">
       <h3>Expediente e Ficha Técnica</h3>
       <ul class="expediente-list">
-        <li><strong>Coordenação Geral:</strong> Secretaria de Gestão e Inovação (SEGES) / MGI</li>
+        <li><strong>Coordenação Geral:</strong> Diretoria de Parcerias e Transferências - DTPAR/SEGES/MGI</li>
         <li><strong>Desenvolvimento Técnico:</strong> Equipe de Capacitação da Rede de Parcerias</li>
         <li><strong>Design e Acessibilidade:</strong> Diretoria de Tecnologia e Informações Operacionais</li>
         <li><strong>Parceiros Institucionais:</strong> Estados, Municípios e Organizações da Sociedade Civil (OSCs)</li>
@@ -1607,8 +1607,13 @@ def patch_index_modal():
     
     if start_pos != -1 and cap9_pos != -1:
         cap9_end_pos = html_content.find("          </div>\n        </div>", cap9_pos)
+        offset = len("          </div>\n")
+        if cap9_end_pos == -1:
+            cap9_end_pos = html_content.find("          </div>        </div>", cap9_pos)
+            offset = len("          </div>")
+            
         if cap9_end_pos != -1:
-            cap9_end_pos += len("          </div>\n") # Include the cap 9 closing div tag
+            cap9_end_pos += offset # Include the cap 9 closing div tag
             
             patched_content = html_content[:start_pos] + new_chapters_html + html_content[cap9_end_pos:]
             with open(index_path, "w", encoding="utf-8") as f:
