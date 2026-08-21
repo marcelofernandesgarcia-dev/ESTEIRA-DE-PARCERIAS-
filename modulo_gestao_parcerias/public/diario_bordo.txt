@@ -1,0 +1,8 @@
+[2026-07-15] [GERENCIAL] [marcelofernandesgarcia@gmail.com]
+Reunião de alinhamento com a diretoria do DTPAR para fechamento do escopo de ampliação do módulo de parcerias do TRANSFEREGOV. Definição do cronograma de transição por faixas de população dos municípios e estados.
+
+[2026-07-17] [TECNICO] [vitor.cesar@mgi.gov.br]
+Homologação das minutas padrões de editais e termos de colaboração jurídica emitidos pela AGU. Configuração do indexador de busca de termos e preparação da base de dados de FAQ com 200 itens.
+
+[2026-07-20] [TECNICO] [nayara.anjos@mgi.gov.br]
+Desenvolvimento do Gauge reativo de Prontidão de Adesão em SVG para municípios e estados, além de implementar o assistente inteligente na barra lateral integrado com o Gemini.

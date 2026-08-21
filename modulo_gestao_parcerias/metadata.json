@@ -1,0 +1,6 @@
+{
+  "name": "SGP - Módulo de Gestão de Parcerias",
+  "description": "Módulo de auditoria, compliance e análise de admissibilidade de parcerias com o Poder Público (MROSC - Lei 13.019/2014).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
