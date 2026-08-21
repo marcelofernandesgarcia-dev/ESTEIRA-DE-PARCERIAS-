@@ -96,6 +96,50 @@
         display: none !important;
       }
     }
+    /* Estilos do Botão Flutuante de Consulta OPP (Teste) */
+    #floating-opp-btn {
+      position: fixed;
+      bottom: 9rem;
+      left: 2rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+      color: #ffffff !important;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #floating-opp-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+      background: linear-gradient(135deg, #d97706, #b45309) !important;
+    }
+    @media (max-width: 768px) {
+      #floating-opp-btn {
+        bottom: 8.5rem;
+        left: 1.5rem;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      #floating-opp-btn .floating-text {
+        display: none;
+      }
+    }
+    @media print {
+      #floating-opp-btn {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -103,6 +147,12 @@
   <a href="cartilha.html" target="_blank" id="floating-cartilha-btn" title="Abrir / Imprimir Cartilha" aria-label="Abrir / Imprimir Cartilha">
     <span class="floating-icon">📖</span>
     <span class="floating-text">Cartilha de Nivelamento</span>
+  </a>
+
+  <!-- Botão Flutuante de Consulta OPP (Teste) (Fixo na Tela) -->
+  <a href="https://parcerias.transferegov.sistema.gov.br/ep-atos-prep-web/atos-prep/proposta/consulta?redirectUri=%2Fgestaofinanceira%2Fopp%2Fconsulta&subtitulo=Selecione%20uma%20parceria" target="_blank" rel="noopener noreferrer" id="floating-opp-btn" title="Consulta OPP (Parceria Teste)" aria-label="Consulta OPP (Parceria Teste)">
+    <span class="floating-icon">💳</span>
+    <span class="floating-text">Consulta OPP (Teste)</span>
   </a>
 
   <!-- Botão Flutuante de Treinamento (Fixo na Tela) -->
