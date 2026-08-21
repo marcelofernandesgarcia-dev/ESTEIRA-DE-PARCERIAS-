@@ -1978,10 +1978,25 @@ audio {
   #floating-training-btn .floating-text {
     display: none;
   }
+  .logo {
+    font-size: 1.05rem;
+  }
+  .logo span {
+    font-size: 0.65rem;
+  }
 }
 
 @media print {
   #floating-training-btn {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+  .logo span {
+    font-size: 0.65rem;
   }
 }
