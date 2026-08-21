@@ -148,7 +148,7 @@ chapters_data = {
             ("📱 Pix e QR Code", "Pagamento direto a fornecedores e prestadores na ponta, garantindo conciliação imediata."),
             ("⚙️ Controle Ativo", "Prerrogativa do órgão federal de comandar o bloqueio e devolução de saldos não utilizados.")
         ],
-        "highlight": "Ficha Técnica e Prazos: Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026."
+        "highlight": "Ficha Técnica e Prazos: Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.\n\nConsulta Pública: A consulta à OPP no Gestão de Parcerias está acessível na navegação em acesso livre através do endereço: https://parcerias.transferegov.sistema.gov.br/gestaofinanceira/opp/consulta . Exemplo de Parceria com OPP em produção (Piloto): 2024-00000623."
     },
     "cap6": {
         "title": "Jornada da Transferência",
@@ -1084,7 +1084,8 @@ def generate_html_files():
       
       <div class="callout callout-importante" style="margin-top:16px;">
         <div class="callout-title">Importante — Ficha Técnica e Prazos:</div>
-        Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.
+        <p>Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.</p>
+        <p style="margin-top: 10px;"><strong>Consulta Pública:</strong> A consulta à OPP no Gestão de Parcerias está acessível na navegação em acesso livre através do endereço: <a href="https://parcerias.transferegov.sistema.gov.br/gestaofinanceira/opp/consulta" target="_blank" rel="noopener noreferrer" style="color: var(--gov-blue-warm-vivid-60); text-decoration: underline;">https://parcerias.transferegov.sistema.gov.br/gestaofinanceira/opp/consulta</a>. Exemplo de Parceria com OPP em produção (Piloto): <strong>2024-00000623</strong>.</p>
       </div>
 
       <div style="margin: 20px 0; text-align: center;">
@@ -1443,8 +1444,9 @@ def patch_index_modal():
                     </div>
                   </div>
                   
-                  <div style="background: rgba(255, 193, 7, 0.05); border-left: 3px solid #ffc107; padding: 1rem; border-radius: 4px; font-size: 0.85rem; color: var(--text-secondary);">
-                    <strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.
+                  <div style="background: rgba(255, 193, 7, 0.05); border-left: 3px solid #ffc107; padding: 1rem; border-radius: 4px; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div><strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API em 3 a 5 segundos; Janela de autorizações das 07h às 19h30; transações via Pix sem teto de valor. A migração compulsória para todas as 63 mil contas ativas no país deve ocorrer até dezembro de 2026.</div>
+                    <div style="border-top: 1px dashed rgba(255,193,7,0.2); padding-top: 0.5rem;"><strong>Consulta Pública:</strong> A consulta à OPP no Gestão de Parcerias está acessível na navegação em acesso livre em: <a href="https://parcerias.transferegov.sistema.gov.br/gestaofinanceira/opp/consulta" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;">https://parcerias.transferegov.sistema.gov.br/gestaofinanceira/opp/consulta</a>. Exemplo de Parceria com OPP em produção (Piloto): <strong>2024-00000623</strong>.</div>
                   </div>
                 </div>
                 
