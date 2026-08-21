@@ -5,7 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capacitação TRANSFEREGOV — Trilha de Aprendizagem de Parcerias</title>
   <meta name="description" content="Material de treinamento oficial para capacitação de entes locais (Estados e Municípios) no TRANSFEREGOV no âmbito do Módulo de Gestão de Parcerias do [ÓRGÃO].">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <style>
+    /* Estilos do Botão Flutuante de Treinamento */
+    #floating-training-btn {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      background: linear-gradient(135deg, #10b981, #059669) !important;
+      color: #ffffff !important;
+      padding: 0.75rem 1.25rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #floating-training-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+      background: linear-gradient(135deg, #059669, #047857) !important;
+    }
+    @media (max-width: 768px) {
+      #floating-training-btn {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      #floating-training-btn .floating-text {
+        display: none;
+      }
+    }
+    @media print {
+      #floating-training-btn {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
