@@ -96,8 +96,6 @@ chapters_data = {
     "meta_info": "Versão: 2.3.0 (Edição Atualizada)\nPúblico: Concedentes, Estados, Municípios e OSCs",
     "expediente": [
         "Coordenação Geral: Diretoria de Parcerias e Transferências - DTPAR/SEGES/MGI",
-        "Desenvolvimento Técnico: Equipe de Capacitação da Rede de Parcerias",
-        "Design e Acessibilidade: Diretoria de Tecnologia e Informações Operacionais",
         "Parceiros Institucionais: Estados, Municípios e Organizações da Sociedade Civil (OSCs)"
     ],
     "cap1": {
@@ -941,8 +939,6 @@ def generate_html_files():
       <h3>Expediente e Ficha Técnica</h3>
       <ul class="expediente-list">
         <li><strong>Coordenação Geral:</strong> Diretoria de Parcerias e Transferências - DTPAR/SEGES/MGI</li>
-        <li><strong>Desenvolvimento Técnico:</strong> Equipe de Capacitação da Rede de Parcerias</li>
-        <li><strong>Design e Acessibilidade:</strong> Diretoria de Tecnologia e Informações Operacionais</li>
         <li><strong>Parceiros Institucionais:</strong> Estados, Municípios e Organizações da Sociedade Civil (OSCs)</li>
       </ul>
     </section>
