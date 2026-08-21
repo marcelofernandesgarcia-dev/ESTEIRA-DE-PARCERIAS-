@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     treinamento: {
       title: 'Ambiente de Treinamento: Sandbox de Simulação',
-      desc: 'O espaço perfeito para capacitação. Permite simular empenhos, termos de adesão e execução física em um ambiente seguro e isolado, onde é impossível cometer erros com efeitos financeiros reais.'
+      desc: 'O espaço perfeito para capacitação. Permite simular empenhos, termos de adesão e execução física em um ambiente seguro e isolado (https://tre-siconv.estaleiro.serpro.gov.br/ep-atos-prep-web/), onde é impossível cometer erros com efeitos financeiros reais.'
     },
     homologacao: {
       title: 'Ambiente de Homologação: Testes e Validação de Fluxos',
