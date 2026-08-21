@@ -1096,7 +1096,7 @@
               Ler Slides na Página
             </button>
             <button id="btn-read-report" class="btn-primary" style="font-size: 0.8rem; padding: 0.55rem; width: 100%; justify-content: center; gap: 0.5rem; cursor: pointer; background: linear-gradient(135deg, var(--primary), #10b981);">
-              Ler Relatório Técnico
+              Ler Cartilha de Nivelamento
             </button>
             <div style="display: flex; gap: 0.5rem; margin-top: 0.25rem;">
               <a href="materiais_complementares/slides/Modernizing_Federal_Partnerships.pptx" style="font-size: 0.7rem; color: var(--text-muted); text-decoration: underline; flex: 1; text-align: center;">Baixar .PPTX</a>
@@ -1252,31 +1252,73 @@
 
   <!-- Report Reader Modal -->
   <div id="report-reader-modal" class="reader-modal">
-    <div class="modal-container" style="max-width: 900px;">
+    <div class="modal-container" style="max-width: 950px;">
       <div class="modal-header">
-        <h3>Relatório Técnico e Cartilha de Nivelamento</h3>
-        <button id="close-report-modal" class="modal-close-btn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
+        <h3 style="color: var(--secondary); font-family: var(--font-display); font-size: 1.3rem; margin: 0;">Cartilha de Nivelamento</h3>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="materiais_complementares/slides/Relatório Técnico Corrigido_ Esteira de Parcerias e TRANSFEREGOV.docx" class="btn-primary" style="font-size: 0.75rem; padding: 0.4rem 0.8rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; font-weight: bold; background: rgba(0, 242, 254, 0.1); border: 1px solid var(--secondary); color: var(--secondary);" title="Baixar Cartilha (.DOCX)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download
+          </a>
+          <button id="close-report-modal" class="modal-close-btn" style="display: inline-flex; align-items: center; justify-content: center; height: 32px; width: 32px; padding: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
       </div>
       <div class="modal-body" style="background: #0b111e; padding: 2.5rem 3rem;">
         <div class="document-reader-outline">
-          <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--secondary); text-align: center; margin-bottom: 2rem;">Relatório Técnico Corrigido: Módulo de Gestão de Parcerias e TRANSFEREGOV</h2>
+          
+          <!-- Capa da Cartilha -->
+          <div class="cartilha-cover" style="background: linear-gradient(135deg, rgba(0, 242, 254, 0.1) 0%, rgba(79, 172, 254, 0.1) 100%); border: 1px solid rgba(0, 242, 254, 0.25); border-radius: var(--border-radius-lg); padding: 2.5rem; text-align: center; margin-bottom: 2.5rem; position: relative; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+            <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(0, 242, 254, 0.08); border-radius: 50%; filter: blur(30px);"></div>
+            <div style="position: absolute; bottom: -50px; left: -50px; width: 150px; height: 150px; background: rgba(79, 172, 254, 0.08); border-radius: 50%; filter: blur(30px);"></div>
+            
+            <span class="section-tag" style="margin-bottom: 1rem; letter-spacing: 2px;">GUIA OFICIAL DE CAPACITAÇÃO</span>
+            <h2 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Cartilha de Nivelamento</h2>
+            <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 1.75rem auto; font-size: 1.05rem; line-height: 1.6;">
+              Módulo de Gestão de Parcerias e Ecossistema TRANSFEREGOV.BR. Da conceituação de Transferências Simplificadas às diretrizes operacionais de pagamento.
+            </p>
+            
+            <a href="materiais_complementares/slides/Relatório Técnico Corrigido_ Esteira de Parcerias e TRANSFEREGOV.docx" class="btn-primary" style="font-size: 0.9rem; padding: 0.75rem 1.75rem; display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none; border-radius: var(--border-radius-sm); font-weight: 700; transition: var(--transition-smooth); background: linear-gradient(135deg, var(--primary), #10b981); border: none; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Baixar Cartilha Completa (.DOCX)
+            </a>
+          </div>
           
           <!-- Cap 1 -->
           <div class="report-chapter active">
             <button class="report-chapter-header">1. Sumário Executivo <span>▾</span></button>
             <div class="report-chapter-content" style="display: block;">
-              <p>A modernização dos repasses de recursos no âmbito federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV</strong>. Esta mudança é uma resposta direta à necessidade de conferir celeridade e eficiência à execução de políticas públicas críticas e otimizar as parcerias interfederativas.</p>
-              <p>O novo modelo rompe com a rigidez dos convênios tradicionais, adotando uma sistemática baseada em adesão, metas padronizadas e monitoramento por resultados, operacionalizada integralmente via Plataforma <strong>TRANSFEREGOV</strong>.</p>
-              <p><strong>Principais Conclusões:</strong></p>
-              <ul>
-                <li><strong>Ruptura de Paradigma:</strong> Dispensa convênios ou instrumentos complexos ex-ante.</li>
-                <li><strong>Padronização Técnica:</strong> Utiliza metas pré-configuradas no sistema do Módulo de Gestão de Parcerias.</li>
-                <li><strong>Solução de Estrutura Organizacional:</strong> A arquitetura sistêmica utilizará o código do <strong>SIORG</strong> do Departamento de Gestão de Fundos e de Recursos Externos (<strong>267384</strong>) para mapear a responsabilidade administrativa.</li>
-                <li><strong>Gestão de Riscos Diferenciada:</strong> Regras de exceção (como para o defeso eleitoral) são parametrizadas no sistema de acordo com a base normativa de cada política.</li>
-                <li><strong>Rastreabilidade Financeira:</strong> Integração nativa com o <strong>SIAFI</strong> para abertura automática de contas bancárias e celeridade nos repasses.</li>
-              </ul>
+              <div class="cartilha-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center; margin-top: 1rem;">
+                <div>
+                  <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">A modernização dos repasses de recursos no âmbito federal atinge um marco fundamental com a transição para o modelo de <strong>Transferência Simplificada</strong> no <strong>TRANSFEREGOV</strong>. Esta mudança é uma resposta direta à necessidade de conferir celeridade e eficiência à execução de políticas públicas críticas e otimizar as parcerias interfederativas.</p>
+                  <p style="font-size: 1rem; color: #fff; font-weight: 700; margin-bottom: 1rem; font-family: var(--font-display);">Principais Conclusões:</p>
+                  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div style="background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--secondary); font-size: 0.85rem;">
+                      <strong>Ruptura de Paradigma:</strong> Dispensa convênios ou instrumentos complexos ex-ante.
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--secondary); font-size: 0.85rem;">
+                      <strong>Padronização Técnica:</strong> Utiliza metas pré-configuradas no sistema do Módulo de Gestão de Parcerias.
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--secondary); font-size: 0.85rem;">
+                      <strong>Solução de Estrutura Organizacional:</strong> Uso do SIORG <strong>267384</strong> (Depto. de Gestão de Fundos) para mapeamento administrativo.
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--secondary); font-size: 0.85rem;">
+                      <strong>Gestão de Riscos Diferenciada:</strong> Regras de exceção (como defeso eleitoral) parametrizadas por política pública.
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--secondary); font-size: 0.85rem;">
+                      <strong>Rastreabilidade Financeira:</strong> Integração com SIAFI para abertura automática de contas bancárias.
+                    </div>
+                  </div>
+                </div>
+                <div style="text-align: center; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Visão Geral do Módulo</span>
+                  <a href="materiais_complementares/slides/Guia_das_Transferências_Simplificadas_Transferegov.png" target="_blank">
+                    <img src="materiais_complementares/slides/Guia_das_Transferências_Simplificadas_Transferegov.png" alt="Guia das Transferências" style="width: 100%; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); margin-bottom: 0.5rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Clique para ampliar o mapa mental</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1284,8 +1326,25 @@
           <div class="report-chapter">
             <button class="report-chapter-header">2. Contexto Institucional e Base Normativa <span>▸</span></button>
             <div class="report-chapter-content">
-              <p>A implementação desta nova modalidade é sustentada pelo <strong>Acordo de Cooperação Técnica (ACT)</strong> firmado entre o MGI e os órgãos federais parceiros. Este acordo formaliza o suporte do órgão central para a internalização de políticas finalísticas no ecossistema digital de transferências da União.</p>
-              <p>O MGI atua como gestor da plataforma TRANSFEREGOV, enquanto cada órgão parceiro detém autonomia absoluta na gestão dos recursos de seus fundos e na definição das regras de negócio de suas políticas públicas.</p>
+              <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">A implementação desta nova modalidade é sustentada pelo <strong>Acordo de Cooperação Técnica (ACT)</strong> firmado entre o MGI e os órgãos federais parceiros. Este acordo formaliza o suporte do órgão central para a internalização de políticas finalísticas no ecossistema digital de transferências da União.</p>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: rgba(0, 242, 254, 0.03); border: 1px solid rgba(0, 242, 254, 0.15); padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: var(--secondary); margin-bottom: 0.75rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    Papel do MGI
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Gestor central da Plataforma TRANSFEREGOV, provedor da infraestrutura técnica e do marco regulatório. Assegura conformidade legal e governança sistêmica.</p>
+                </div>
+                
+                <div style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.15); padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: #10b981; margin-bottom: 0.75rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"></path></svg>
+                    Papel dos Órgãos Parceiros
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Autonomia total na gestão dos recursos de seus fundos, na definição das regras de negócio de suas políticas finalísticas e homologação de metas.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1293,13 +1352,27 @@
           <div class="report-chapter">
             <button class="report-chapter-header">3. Arquitetura Técnica do TRANSFEREGOV <span>▸</span></button>
             <div class="report-chapter-content">
-              <p>A robustez sistêmica do TRANSFEREGOV assegura a integridade dos recursos. Os ambientes operacionais são:</p>
-              <ul>
-                <li><strong>Treinamento:</strong> Simulação e aprendizado das equipes técnicas sem impacto real.</li>
-                <li><strong>Homologação:</strong> Testes finais de fluxos e parametrizações sem impacto real.</li>
-                <li><strong>Produção:</strong> Uso real para empenho, pagamento e execução oficial com impacto jurídico-financeiro.</li>
-              </ul>
-              <p>Para contornar eventuais ausências de um código de Unidade Gestora próprio, a solução técnica consiste no uso do <strong>SIORG</strong> do <strong>Departamento de Gestão de Fundos e de Recursos Externos (267384)</strong>.</p>
+              <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">A robustez sistêmica do TRANSFEREGOV assegura a integridade dos recursos. A arquitetura de desenvolvimento e execução é subdividida em três ambientes bem definidos:</p>
+              
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.25rem 1rem; border-radius: 8px; text-align: center;">
+                  <span style="background: rgba(0, 242, 254, 0.1); color: var(--secondary); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase;">1. Treinamento</span>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.4;">Simulação e sandbox para capacitação de técnicos locais sem risco fiscal ou transações reais.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.25rem 1rem; border-radius: 8px; text-align: center;">
+                  <span style="background: rgba(255, 193, 7, 0.1); color: #ffc107; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase;">2. Homologação</span>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.4;">Testes de integração bancária via API e validações finais de layouts antes da implantação.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.25rem 1rem; border-radius: 8px; text-align: center;">
+                  <span style="background: rgba(220, 53, 69, 0.1); color: #dc3545; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase;">3. Produção</span>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.4;">Execução oficial e jurídica. Repasses efetivos, empenhos e monitoramento de metas.</p>
+                </div>
+              </div>
+              
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px dashed var(--border-color); padding: 1rem; border-radius: 6px; font-size: 0.85rem; display: flex; align-items: center; gap: 0.75rem; color: var(--text-secondary);">
+                <span style="font-size: 1.25rem;">🔧</span>
+                <span><strong>Solução Técnica SIORG:</strong> Para contornar eventuais ausências de um código de Unidade Gestora próprio, a arquitetura utiliza o SIORG do <strong>Departamento de Gestão de Fundos e de Recursos Externos (267384)</strong>.</span>
+              </div>
             </div>
           </div>
 
@@ -1307,12 +1380,33 @@
           <div class="report-chapter">
             <button class="report-chapter-header">4. Parametrização por Política Pública <span>▸</span></button>
             <div class="report-chapter-content">
-              <p>O Módulo de Gestão de Parcerias do TRANSFEREGOV adapta-se às particularidades das diversas políticas públicas por meio de parametrização no sistema:</p>
-              <ul>
-                <li><strong>Requisitos de Habilitação:</strong> Configuração automatizada de critérios fiscais, jurídicos e técnicos que os entes devem cumprir eletronicamente.</li>
-                <li><strong>Anexos e Documentos:</strong> Possibilidade de limitar a adesão apenas a proponentes que anexarem planos setoriais específicos (ex: planos de contingência, declarações clínicas).</li>
-                <li><strong>Metas Padronizadas:</strong> Conjunto de objetivos de entrega física e quantificável pré-configurados para a rápida adesão dos estados e municípios.</li>
-              </ul>
+              <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">O Módulo de Gestão de Parcerias do TRANSFEREGOV adapta-se às particularidades das diversas políticas públicas por meio de parametrização no sistema:</p>
+              
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(0,0,0,0.15); padding: 1rem; border-radius: 8px;">
+                  <div style="background: var(--secondary); color: var(--bg-deep); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                  <div>
+                    <h5 style="color: #fff; margin-bottom: 0.25rem; font-size: 0.95rem; font-family: var(--font-display);">Requisitos de Habilitação</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Configuração automatizada de critérios fiscais, jurídicos e técnicos que os entes devem cumprir eletronicamente.</p>
+                  </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(0,0,0,0.15); padding: 1rem; border-radius: 8px;">
+                  <div style="background: var(--secondary); color: var(--bg-deep); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                  <div>
+                    <h5 style="color: #fff; margin-bottom: 0.25rem; font-size: 0.95rem; font-family: var(--font-display);">Anexos e Documentos Customizados</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Possibilidade de limitar a adesão apenas a proponentes que anexarem planos setoriais específicos (ex: planos de contingência, declarações clínicas).</p>
+                  </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(0,0,0,0.15); padding: 1rem; border-radius: 8px;">
+                  <div style="background: var(--secondary); color: var(--bg-deep); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                  <div>
+                    <h5 style="color: #fff; margin-bottom: 0.25rem; font-size: 0.95rem; font-family: var(--font-display);">Metas Padronizadas</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Conjunto de objetivos de entrega física e quantificável pré-configurados para a rápida adesão dos estados e municípios.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1320,14 +1414,42 @@
           <div class="report-chapter">
             <button class="report-chapter-header">5. Ordem de Pagamento de Parcerias (OPP) <span>▸</span></button>
             <div class="report-chapter-content">
-              <p>A Ordem de Pagamento de Parcerias (OPP) representa a automação definitiva do ciclo de execução financeira no Módulo de Gestão de Parcerias do TRANSFEREGOV. Ela desburocratiza e assegura o fluxo de recursos públicos federais:</p>
-              <ul>
-                <li><strong>Execução Bancária em Tempo Real:</strong> Integração nativa via API com bancos públicos (Caixa, BB e BNB), realizando um bypass no processamento batch contábil clássico para quitações instantâneas.</li>
-                <li><strong>Autorização Eletrônica em Dupla Assinatura:</strong> Exige a autorização digital conjunta (Operador, Gestor ou Ordenador de Despesa) vinculada à identidade Gov.br nível Ouro para maior conformidade.</li>
-                <li><strong>Pix e QR Codes na Ponta:</strong> Quitação direta de fornecedores locais sem a necessidade de transferências intermediárias ou saques manuais pela entidade beneficiária.</li>
-                <li><strong>Cadastro Bancário Rígido de RLAs:</strong> As informações de Representantes Legais Autorizados vêm direto dos bancos em tempo real via API, impedindo edições ou cadastros manuais inseguros.</li>
-                <li><strong>Ferramentas de Controle Ativo:</strong> Funcionalidades de bloqueio e desbloqueio remoto de contas pelo órgão concedente, controle de finalidade de despesas e devolução automatizada de saldos ao Tesouro Nacional.</li>
-              </ul>
+              <div class="cartilha-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: start; margin-top: 1rem;">
+                <div>
+                  <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">A Ordem de Pagamento de Parcerias (OPP) representa a automação definitiva do ciclo de execução financeira no Módulo de Gestão de Parcerias do TRANSFEREGOV. Ela desburocratiza e assegura o fluxo de recursos públicos federais:</p>
+                  
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1rem; border-radius: 6px;">
+                      <h5 style="color: var(--secondary); margin-bottom: 0.25rem; font-size: 0.9rem; font-family: var(--font-display);">⚡ Tempo Real via API</h5>
+                      <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Integração nativa com BB, Caixa e BNB, eliminando o processamento em lote (batch).</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1rem; border-radius: 6px;">
+                      <h5 style="color: var(--secondary); margin-bottom: 0.25rem; font-size: 0.9rem; font-family: var(--font-display);">🛡️ Dupla Assinatura</h5>
+                      <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Assinatura eletrônica em dupla autenticação (Operador/Gestor) via Gov.br Ouro.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1rem; border-radius: 6px;">
+                      <h5 style="color: var(--secondary); margin-bottom: 0.25rem; font-size: 0.9rem; font-family: var(--font-display);">📱 Pix e QR Code</h5>
+                      <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Quitação direta de fornecedores locais na ponta sem saques intermediários.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1rem; border-radius: 6px;">
+                      <h5 style="color: var(--secondary); margin-bottom: 0.25rem; font-size: 0.9rem; font-family: var(--font-display);">⚙️ Controle Ativo</h5>
+                      <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">Bloqueio e desbloqueio remoto de contas bancárias pelo órgão concedente.</p>
+                    </div>
+                  </div>
+                  
+                  <div style="background: rgba(255, 193, 7, 0.05); border-left: 3px solid #ffc107; padding: 1rem; border-radius: 4px; font-size: 0.85rem; color: var(--text-secondary);">
+                    <strong>Ficha Técnica e Prazos:</strong> Abertura de conta via API bancária em 3 a 5 segundos; Janela de operação das 07h às 19h30; transações via Pix sem teto de valor.
+                  </div>
+                </div>
+                
+                <div style="text-align: center; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Fluxo Operacional OPP</span>
+                  <a href="materiais_complementares/OPP TREINAMENTO/Fluxo_da_Ordem_de_Pagamento.png" target="_blank">
+                    <img src="materiais_complementares/OPP TREINAMENTO/Fluxo_da_Ordem_de_Pagamento.png" alt="Fluxo da Ordem de Pagamento" style="width: 100%; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); margin-bottom: 0.5rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Clique para abrir o fluxograma bancário</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1335,14 +1457,52 @@
           <div class="report-chapter">
             <button class="report-chapter-header">6. Jornada da Transferência <span>▸</span></button>
             <div class="report-chapter-content">
-              <p>O fluxo simplificado é composto por cinco etapas sequenciais:</p>
-              <ol>
-                <li><strong>Convocatória:</strong> Cadastro do programa, regras e metas padronizadas pelo órgão concedente.</li>
-                <li><strong>Manifestação de Interesse:</strong> Adesão eletrônica simples e rápida pelo Ente Proponente.</li>
-                <li><strong>Análise e Aprovação:</strong> Validação documental ágil da proposta de adesão.</li>
-                <li><strong>Empenho e Desembolso:</strong> Abertura automática de conta e liberação via SIAFI.</li>
-                <li><strong>Execução e Monitoramento:</strong> Comprovação da entrega física e prestação de contas pelo próprio TRANSFEREGOV.</li>
-              </ol>
+              <div class="cartilha-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: start; margin-top: 1rem;">
+                <div>
+                  <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">O fluxo lógico simplificado é estruturado em etapas claras que substituem a burocracia documental tradicional por validações diretas:</p>
+                  
+                  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--primary); font-size: 0.85rem; color: var(--text-secondary);">
+                      <strong style="font-size: 1.2rem; color: var(--primary);">01</strong>
+                      <div>
+                        <strong>Convocatória:</strong> Cadastro das regras e metas no sistema pelo órgão concedente.
+                      </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--primary); font-size: 0.85rem; color: var(--text-secondary);">
+                      <strong style="font-size: 1.2rem; color: var(--primary);">02</strong>
+                      <div>
+                        <strong>Manifestação de Interesse:</strong> Adesão digital rápida e sem burocracia pelo ente parceiro.
+                      </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--primary); font-size: 0.85rem; color: var(--text-secondary);">
+                      <strong style="font-size: 1.2rem; color: var(--primary);">03</strong>
+                      <div>
+                        <strong>Validação Técnica:</strong> Avaliação expedita e verificação dos critérios automatizados.
+                      </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--primary); font-size: 0.85rem; color: var(--text-secondary);">
+                      <strong style="font-size: 1.2rem; color: var(--primary);">04</strong>
+                      <div>
+                        <strong>Empenho e Desembolso:</strong> Abertura automática de conta e execução via SIAFI.
+                      </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.02); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid var(--primary); font-size: 0.85rem; color: var(--text-secondary);">
+                      <strong style="font-size: 1.2rem; color: var(--primary);">05</strong>
+                      <div>
+                        <strong>Execução e Monitoramento:</strong> Comprovação das metas físicas no próprio TRANSFEREGOV.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div style="text-align: center; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 0.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Mapa Mental do Fluxo</span>
+                  <a href="materiais_complementares/slides/Jornada_da_Transferência_Simplificada (1).png" target="_blank">
+                    <img src="materiais_complementares/slides/Jornada_da_Transferência_Simplificada (1).png" alt="Jornada da Transferência" style="width: 100%; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); margin-bottom: 0.5rem; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Clique para abrir a jornada simplificada</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1350,10 +1510,43 @@
           <div class="report-chapter">
             <button class="report-chapter-header">7. Dúvidas Operacionais (FAQ) <span>▸</span></button>
             <div class="report-chapter-content">
-              <p><strong>Dúvida: Como funciona o processo de adesão ao Módulo de Gestão de Parcerias no TRANSFEREGOV?</strong><br>Resposta: O processo de adesão é 100% eletrônico. O Ente federado (Estado ou Município) localiza a chamada pública de seu interesse no TRANSFEREGOV e manifesta interesse aderindo diretamente pelo sistema, preenchendo as informações solicitadas e assinando digitalmente o termo.</p>
-              <p><strong>Dúvida: O que é a parametrização das políticas públicas?</strong><br>Resposta: É a flexibilidade dada aos órgãos federais concedentes para predefinir as regras de negócio, metas padronizadas e documentos obrigatórios para cada programa finalístico de repasse, adaptando o sistema às demandas específicas de cada setor.</p>
-              <p><strong>Dúvida: Qual o papel do ambiente de Treinamento?</strong><br>Resposta: Ele funciona como um simulador (sandbox) isolado, permitindo que as equipes técnicas de estados e municípios simulem a parametrização, adesão, empenho e prestação de contas de forma prática e 100% segura, sem risco de gerar obrigações financeiras reais.</p>
-              <p><strong>Dúvida: Quais são os principais benefícios de uso deste modelo?</strong><br>Resposta: Desburocratização extrema (eliminação dos convênios clássicos), celeridade operacional com empenho automático via SIAFI, foco nos resultados físicos entregues em vez de controle processual, e total transparência ativa e rastreabilidade dos recursos federais.</p>
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <p style="color: #fff; font-weight: bold; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-display);">
+                    <span style="color: var(--secondary);">❓</span> Como funciona o processo de adesão ao Módulo de Gestão de Parcerias no TRANSFEREGOV?
+                  </p>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; padding-left: 1.5rem;">
+                    O processo de adesão é 100% eletrônico. O Ente federado (Estado ou Município) localiza a chamada pública de seu interesse no TRANSFEREGOV e manifesta interesse aderindo diretamente pelo sistema, preenchendo as informações solicitadas e assinando digitalmente o termo.
+                  </p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <p style="color: #fff; font-weight: bold; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-display);">
+                    <span style="color: var(--secondary);">❓</span> O que é a parametrização das políticas públicas?
+                  </p>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; padding-left: 1.5rem;">
+                    É a flexibilidade dada aos órgãos federais concedentes para predefinir as regras de negócio, metas padronizadas e documentos obrigatórios para cada programa finalístico de repasse, adaptando o sistema às demandas específicas de cada setor.
+                  </p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <p style="color: #fff; font-weight: bold; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-display);">
+                    <span style="color: var(--secondary);">❓</span> Qual o papel do ambiente de Treinamento?
+                  </p>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; padding-left: 1.5rem;">
+                    Ele funciona como um simulador (sandbox) isolado, permitindo que as equipes técnicas de estados e municípios simulem a parametrização, adesão, empenho e prestação de contas de forma prática e 100% segura, sem risco de gerar obrigações financeiras reais.
+                  </p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                  <p style="color: #fff; font-weight: bold; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-display);">
+                    <span style="color: var(--secondary);">❓</span> Quais são os principais benefícios de uso deste modelo?
+                  </p>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; padding-left: 1.5rem;">
+                    Desburocratização extrema (eliminação dos convênios clássicos), celeridade operacional com empenho automático via SIAFI, foco nos resultados físicos entregues em vez de controle processual, e total transparência ativa e rastreabilidade dos recursos federais.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1361,8 +1554,23 @@
           <div class="report-chapter">
             <button class="report-chapter-header">8. Pontos de Atenção e Riscos <span>▸</span></button>
             <div class="report-chapter-content">
-              <p><strong>"Sintoma do Convênio":</strong> Resistência técnica em retroceder exigindo documentos manuais densos que desfiguram a celeridade do repasse simplificado.</p>
-              <p><strong>Defeso Eleitoral:</strong> O programa <strong>Prévfogo</strong> possui exceção regulamentada por portaria de emergência orçamentária; o programa <strong>Propatinhas</strong> deve observar rigorosamente a vedação eleitoral ordinária.</p>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 0.5rem;">
+                <div style="background: rgba(220, 53, 69, 0.03); border: 1px solid rgba(220, 53, 69, 0.15); border-left: 4px solid #dc3545; padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: #dc3545; margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    "Sintoma do Convênio"
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Resistência técnica e cultural em desapegar dos procedimentos analíticos tradicionais, exigindo documentos manuais densos que desfiguram a celeridade das Transferências Simplificadas.</p>
+                </div>
+                
+                <div style="background: rgba(255, 193, 7, 0.03); border: 1px solid rgba(255, 193, 7, 0.15); border-left: 4px solid #ffc107; padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: #ffc107; margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    Defeso Eleitoral Ordinário
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Observância rígida de prazos legais. Note que o programa <strong>Prévfogo</strong> possui exceções normativas regulamentadas por portaria de emergência orçamentária; já programas como o <strong>Propatinhas</strong> devem respeitar as vedações ordinárias.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1370,8 +1578,23 @@
           <div class="report-chapter">
             <button class="report-chapter-header">9. Boas Práticas Operacionais <span>▸</span></button>
             <div class="report-chapter-content">
-              <p><strong>Navegação Acesso Livre:</strong> Utilizar o módulo sem autenticação para visualizar 90% das telas sem riscos.</p>
-              <p><strong>Diálogo Permanente:</strong> Centralizar discussões de parametrização em chat de equipe ágil para dirimir dúvidas rapidamente.</p>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 0.5rem;">
+                <div style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.15); padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: #10b981; margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Acesso Livre e Sandbox
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Utilizar o módulo no ambiente de treinamento sem necessidade de certificado digital imediato para simular 90% das telas e parametrizações sem qualquer risco fiscal.</p>
+                </div>
+                
+                <div style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.15); padding: 1.25rem; border-radius: 8px;">
+                  <h4 style="color: #10b981; margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Diálogo Técnico Permanente
+                  </h4>
+                  <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); margin: 0;">Centralizar discussões operacionais de parametrização e regras de negócio em fóruns específicos e canais integrados para dirimir dúvidas das equipes executoras com agilidade.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1379,6 +1602,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
